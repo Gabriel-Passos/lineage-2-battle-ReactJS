@@ -1,0 +1,23 @@
+header{
+  background-color: #f0f0f5;
+  display: flex;
+}
+
+ul li{
+  display: inline-block;
+}
+
+li{
+  margin-left: 10px;
+  padding: 16px;
+}
+
+.menus a{
+  font-size: 16px;
+  font-weight: bold;
+  color: #000000;
+}
+
+.menus a:hover{
+  color: rgb(255, 187, 0);
+}
