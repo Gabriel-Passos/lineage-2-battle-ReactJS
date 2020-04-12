@@ -1,0 +1,46 @@
+header{
+  background-color: rgb(255, 255, 255, 0.3);
+}
+.logo-img img{
+  max-width: 80px;
+  height: auto;
+  margin: 8px;
+}
+.menus{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.menus a{
+  font-size: 20px;
+  font-weight: bold;
+}
+.menu-principal a{
+  color: #000000;    
+}
+.menu-principal a:hover{
+color: #ffbb00;
+}
+.menu-principal li{
+  display: inline;
+  margin-left: 10px;
+}
+.menu-secundario a{
+  padding: 8px 20px;
+  color: #ffbb00;
+}
+.menu-secundario a:hover{
+  color: #000000;
+}
+
+.button{
+  background-color: transparent;
+  padding: 8px 0;
+  border: 2px solid #ffbb00;
+  border-radius: 8%;
+  margin-right: 10px;
+}
+
+.button:hover{
+  background-color: #ffbb00;
+}
