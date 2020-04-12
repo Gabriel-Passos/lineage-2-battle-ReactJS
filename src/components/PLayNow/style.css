@@ -1,0 +1,25 @@
+body{
+    width: 100%;
+    height: 0 auto;
+}
+
+.wallpaper-btnPlay{
+    background-color: transparent;
+    width: 100%;
+    height: 900px;
+}
+
+.div-Play{
+
+}
+
+#btn_play{
+    background-color: transparent;
+    border: none;
+}
+
+#btn_play:hover{
+    background-color: orange;
+    
+    
+}
