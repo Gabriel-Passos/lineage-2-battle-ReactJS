@@ -50,6 +50,18 @@
 }
 
 .container-login .content form a{
+  color: #000;
   font-size: 20px;
+  margin: 1% 0 0 24.8888%;
+}
+
+.container-login .content form a:hover{
+  color: #ffbb00;
+}
+
+.container-login .content form .back-link{
+  display: flex;
+  margin-top: 10px;
   align-items: center;
+  font-weight: 500;
 }

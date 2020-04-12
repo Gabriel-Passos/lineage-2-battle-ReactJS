@@ -15,7 +15,7 @@ export default class FormLogin extends Component {
               <input type="email" placeholder="E-mail"/>
               <input type="password" placeholder="Senha"/>
               <button type="submit">Entrar</button>
-              <Link to="/">
+              <Link className="back-link" to="/">
               <FiArrowLeft size={16} color="#ffbb00" />
                 Voltar para home
               </Link>
