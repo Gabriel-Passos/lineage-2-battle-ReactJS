@@ -1,0 +1,44 @@
+body{
+  background-color: white !important;
+}
+
+form{
+  display: flex;
+  flex-direction: column;
+}
+
+h3{
+  font-size: 42px;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+input{
+  width: 50%;
+  margin: 0 auto;
+  border: 1px solid #ccc;
+  padding: 12px;
+  margin-top: 8px;
+}
+
+button{
+  width: 50%;
+  margin: 20px auto 0 auto;
+  border: 2px solid #ffbb00;
+  padding: 12px;
+  font-size: 20px;
+  background-color: transparent;
+  font-weight: bold;
+  color: #ffbb00; 
+  cursor: pointer;
+}
+
+button:hover{
+  color: #000;
+  background-color: #ffbb00;
+}
+
+.container-login{
+  width: 960px;
+  margin: 8% auto 0 auto;
+}
