@@ -1,8 +1,18 @@
 header{
-  background-color:white;
+
   display: flex;
   align-items: center;
   flex-wrap: wrap;
+  background-image: url('../../assets/imagens/menu.png');
+  margin: auto;
+    left: 0;
+    top: -84px;
+    z-index: 4;
+    width: 100%;
+    height: 100px;
+    line-height: 3;
+
+
   
 }
 
