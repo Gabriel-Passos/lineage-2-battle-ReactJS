@@ -9,8 +9,10 @@ export default class Home extends Component {
   render() {
     return (
       <>
-      <Header />
-      <PLayNow />
+      <body className="bodyHome">
+        <Header />
+        <PLayNow />
+      </body>
       </>
     );
   }
