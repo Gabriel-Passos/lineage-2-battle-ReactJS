@@ -8,7 +8,7 @@ export default class Header extends Component {
         <>
             <div className="wallpaper-btnPlay">
               <div className="div-Play">
-                <button id="btn_play">JOGAR AGORA!</button>
+                <a href="#" class="myButton">JOGAR!</a>
               </div>
             </div>
         </>

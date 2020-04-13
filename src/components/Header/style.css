@@ -1,13 +1,8 @@
 header{
-
   display: flex;
   align-items: center;
   flex-wrap: wrap;
-
-
-background-color: transparent;
-
-  
+  background-color: rgba(0, 0, 0, 0.705);
 }
 
 .logo-img img{
@@ -19,16 +14,22 @@ background-color: transparent;
 .menu-principal a{
   font-size: 32px;
   /* font-weight: bold; */
-  color: #000000;    
+  color: white;   
+  transition: 0.4s, text-shadow 0.4s;
 }
 
 .menu-principal a:hover{
-color: #ffbb00;
+color:yellow;
+	border-radius: 5px;
+	text-shadow: 0 0 10px #fff;
+    background: rgba(255,255,255,0.1);
 }
 
 .menu-principal li{
   display: inline;
   margin-left: 20px;
+  
+  
 }
 
 .menu-users{
