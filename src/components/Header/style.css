@@ -1,13 +1,7 @@
-header{
-
+.container-header{
   display: flex;
   align-items: center;
   flex-wrap: wrap;
-
-
-background-color: transparent;
-
-  
 }
 
 .logo-img img{
@@ -28,7 +22,7 @@ color: #ffbb00;
 
 .menu-principal li{
   display: inline;
-  margin-left: 20px;
+  margin-left: 30px;
 }
 
 .menu-users{
