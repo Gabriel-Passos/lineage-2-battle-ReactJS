@@ -1,8 +1,11 @@
 header{
+  background-color: rgba(0, 0, 0, 0.644);
+}
+
+.container-header{
   display: flex;
   align-items: center;
   flex-wrap: wrap;
-  background-color: rgba(0, 0, 0, 0.705);
 }
 
 .logo-img img{
@@ -27,9 +30,7 @@ color:yellow;
 
 .menu-principal li{
   display: inline;
-  margin-left: 20px;
-  
-  
+  margin-left: 30px;
 }
 
 .menu-users{

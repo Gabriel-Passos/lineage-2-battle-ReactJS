@@ -1,11 +1,12 @@
 import React, { Component } from 'react';
 
-import Header from '../../components/Header/Header';
+import FormRegister from '../../components/FormRegister/FormRegister';
+
 
 export default class Register extends Component {
   render() {
     return (
-      <Header />
+      <FormRegister />
     )
   }
 }
