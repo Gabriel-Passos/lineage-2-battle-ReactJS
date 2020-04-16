@@ -8,7 +8,7 @@ export default function Header(){
     <>
         <div className="wallpaper-btnPlay">
           <div className="div-Play">
-            <Link to="/" className="myButton">JOGAR!</Link>
+            <Link to="/" className="myButton">JOGAR</Link>
           </div>
         </div>
     </>

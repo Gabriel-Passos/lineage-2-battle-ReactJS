@@ -82,3 +82,15 @@
 .container-register .content-register .radio-button-register input{
   margin-right: -23%;
 }
+
+.loading-icon-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 19%;
+}
+
+.loading-icon-container img{
+  max-width: 5%;
+  height: auto;
+}

@@ -1,5 +1,4 @@
 header{
-
   background-image: url('../../assets/imagens/menu2.png');
   background-repeat: no-repeat;
   background-size: cover;
@@ -29,7 +28,7 @@ header{
 color:yellow;
 	border-radius: 5px;
 	text-shadow: 0 0 10px #fff;
-    background: rgba(255,255,255,0.1);
+  background: rgba(255,255,255,0.1);
 }
 
 .menu-principal li{
