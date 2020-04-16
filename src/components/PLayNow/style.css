@@ -1,5 +1,3 @@
-@import url('https://fonts.googleapis.com/css?family=Ceviche+One&display=swap');
-
 .container-playnow{
 	width: 100%;
   height: 745px;
@@ -9,42 +7,99 @@
 	align-items: center;
 }
 
-.container-playnow .menu{
+.container-playnow .container-menu-left{
+	width: 10%;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
+	justify-content: center;
 	height: auto;
-	background-color: tomato;
 }
 
-.container-playnow .menu a{
-	font-size: 25px;
+.container-playnow .container-menu-left .menu{
+	margin: 50px 0;
+}
+
+.container-playnow .container-menu-left .imgbottom img{
+	transform: rotate(180deg);
+}
+
+.container-playnow .container-menu-left .menu li{
+	margin: 15px 0;
+}
+
+.container-playnow .container-menu-left .menu a{
+	font-size: 15px;
+	font-family: Roboto, sans-serif;
+	font-weight: bold;
+	color: #535353;
+}
+
+.container-playnow .container-menu-left .menu a:hover{
 	color: #fff;
 }
 
-.container-playnow .btn-play:hover{
-	background-color: orange;    
+.container-playnow .btn-play{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	width: 80%;
 }
+
+.container-playnow .btn-play h2{
+	font-size: 50px;
+	color: #fff;
+	margin-bottom: 10%;
+	font-family: L2, sans-serif;
+}
+
+.container-playnow .btn-play a{
+	color:#fff;
+	font-size: 32px;
+	text-shadow:  0 0 1em rgba(0, 0, 0, 0.9);
+}
+
 .container-playnow .btn-play .myButton {
-	background:linear-gradient(to bottom, #ffec64 5%, #ffab23 100%);
-	background-color:#ffec64;
+	background-color: rgba(255, 236, 100, 0.7);
 	border-radius: 6px;
-	cursor: pointer;
-	color:#333333;
-	font-size: 42px;
-	font-weight: bold;
-	padding: 18px 150px;
-	text-decoration: none;
-	text-shadow: 0px 1px 0px #ffee66;
+	padding: 8px 70px;
 	margin: 0 auto;
 }
 
+
 .container-playnow .btn-play .myButton:hover {
-	background:linear-gradient(to bottom, #ffab23 5%, #ffec64 100%);
-	background-color:#ffab23;
+	background-color:rgba(255, 236, 100, 0.9);
 }
 
-.container-playnow .btn-play .myButton:active {
-	position:relative;
-	top:1px;
+.container-playnow .container-menu-right{
+	width: 10%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	height: auto;
+}
+
+.container-playnow .container-menu-right .menu{
+	margin: 50px 0;
+}
+
+.container-playnow .container-menu-right .imgbottom img{
+	transform: rotate(180deg);
+}
+
+.container-playnow .container-menu-right .menu li{
+	margin: 15px 0;
+}
+
+.container-playnow .container-menu-right .menu a{
+	font-size: 15px;
+	font-family: Roboto, sans-serif;
+	font-weight: bold;
+	color: #535353;
+}
+
+.container-playnow .container-menu-right .menu a:hover{
+	color: #fff;
 }
