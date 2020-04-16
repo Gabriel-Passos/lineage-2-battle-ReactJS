@@ -1,17 +1,16 @@
-import React, { Component } from 'react';
+import React from 'react';
+import { Link } from 'react-router-dom';
 
 import './style.css';
 
-export default class Header extends Component {
-    render() {
-      return (
-        <>
-            <div className="wallpaper-btnPlay">
-              <div className="div-Play">
-                <a href="#" class="myButton">JOGAR!</a>
-              </div>
-            </div>
-        </>
-      )
-    }
+export default function Header(){
+  return (
+    <>
+        <div className="wallpaper-btnPlay">
+          <div className="div-Play">
+            <Link to="/" className="myButton">JOGAR!</Link>
+          </div>
+        </div>
+    </>
+  )
 }
