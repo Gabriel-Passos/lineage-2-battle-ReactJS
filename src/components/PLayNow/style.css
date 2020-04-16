@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Ceviche+One&display=swap');
 
-.wallpaper-btnPlay{
-  width: 100%;
+.container-playnow{
+	width: 100%;
   height: 745px;
 	background-repeat: no-repeat;
 	display: flex;
@@ -9,7 +9,23 @@
 	align-items: center;
 }
 
-.myButton {
+.container-playnow .menu{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	height: auto;
+	background-color: tomato;
+}
+
+.container-playnow .menu a{
+	font-size: 25px;
+	color: #fff;
+}
+
+.container-playnow .btn-play:hover{
+	background-color: orange;    
+}
+.container-playnow .btn-play .myButton {
 	background:linear-gradient(to bottom, #ffec64 5%, #ffab23 100%);
 	background-color:#ffec64;
 	border-radius: 6px;
@@ -20,16 +36,15 @@
 	padding: 18px 150px;
 	text-decoration: none;
 	text-shadow: 0px 1px 0px #ffee66;
+	margin: 0 auto;
 }
-.myButton:hover {
+
+.container-playnow .btn-play .myButton:hover {
 	background:linear-gradient(to bottom, #ffab23 5%, #ffec64 100%);
 	background-color:#ffab23;
 }
-.myButton:active {
+
+.container-playnow .btn-play .myButton:active {
 	position:relative;
 	top:1px;
-}
-
-#btn_play:hover{
-    background-color: orange;    
 }

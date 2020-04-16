@@ -1,5 +1,6 @@
 header{
-  background-image: url('../../assets/images/menu2.png');
+  /* background-image: url('../../assets/images/menu2.png'); */
+  background-color: steelblue;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -25,10 +26,7 @@ header{
 }
 
 .menu-principal a:hover{
-color:yellow;
-	border-radius: 5px;
-	text-shadow: 0 0 10px #fff;
-  background: rgba(255,255,255,0.1);
+  color:#ffbb00;
 }
 
 .menu-principal li{
