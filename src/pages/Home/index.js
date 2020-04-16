@@ -9,8 +9,8 @@ export default class Home extends Component {
   render() {
     return (
       <>
+      <Header />
       <body className="bodyHome">
-        <Header />
         <PLayNow />
       </body>
       </>
