@@ -1,5 +1,9 @@
 header{
-  background-color: rgba(0, 0, 0, 0.644);
+
+  background-image: url('../../assets/imagens/menu2.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 
 .container-header{

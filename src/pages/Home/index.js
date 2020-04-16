@@ -5,11 +5,11 @@ import PLayNow from '../../components/PLayNow/PlayNow';
 
 import './style.css';
 
-export default function Home() {
+export default function Home(){
   return (
     <>
+    <Header />
     <body className="bodyHome">
-      <Header />
       <PLayNow />
     </body>
     </>
