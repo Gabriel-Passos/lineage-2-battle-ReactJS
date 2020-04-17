@@ -1,5 +1,6 @@
 {
   "name": "l2",
+  "homepage": "http://l2infinityworld.com/",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
