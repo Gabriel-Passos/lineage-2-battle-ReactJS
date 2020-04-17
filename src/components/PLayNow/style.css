@@ -34,7 +34,7 @@
 
 .container-playnow .container-menu-left .menu a{
 	font-size: 15px;
-	font-family: Roboto, sans-serif;
+	font-family: Gotham,sans-serif;
 	font-weight: bold;
 	color: #535353;
 }
@@ -80,7 +80,7 @@
 }
 
 .container-playnow .btn-play .interlude-logo img{
-	max-width: 30%;
+	max-width: 40%;
 	height: auto;
 	margin-bottom: 20%;
 }
@@ -108,7 +108,7 @@
 
 .container-playnow .container-menu-right .menu a{
 	font-size: 15px;
-	font-family: Roboto, sans-serif;
+	font-family: Gotham,sans-serif;
 	font-weight: bold;
 	color: #535353;
 }
