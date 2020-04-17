@@ -4,30 +4,34 @@ import {FiHexagon, FiInstagram, FiFacebook, FiGithub, FiLink} from 'react-icons/
 
 import './style.css';
 import ImgDivMenu from '../../assets/images/imgDivMenu.png';
+import logo from '../../assets/images/l2-logo.png';
+import interludeLogo from '../../assets/images/interlude-logo.png';
 
 export default function PlayNow(){
   return (
     <>
         <div className="container-playnow">
-          {/* <div className="container-left"> */}
-            <div className="container-menu-left">
-              <div className="imgtop">
-                <img src={ImgDivMenu} alt=""/>
-              </div>
-              <div className="menu">
-                <li><Link><FiHexagon size={10} color="#fff"/> Classes</Link></li>
-                <li><Link><FiHexagon size={10} color="#fff"/> Classes</Link></li>
-                <li><Link><FiHexagon size={10} color="#fff"/> Classes</Link></li>
-                <li><Link><FiHexagon size={10} color="#fff"/> Classes</Link></li>
-                <li><Link><FiHexagon size={10} color="#fff"/> Classes</Link></li>
-              </div>
-              <div className="imgbottom">
-                <img src={ImgDivMenu} alt=""/>
-              </div>
+          <div className="container-menu-left">
+            <div className="imgtop">
+              <img src={ImgDivMenu} alt=""/>
             </div>
-          {/* </div> */}
+            <div className="menu">
+              <li><Link to="/"><FiHexagon size={10} color="#fff"/> Home</Link></li>
+              <li><Link to="/"><FiHexagon size={10} color="#fff"/> Informação</Link></li>
+              <li><Link to="/register"><FiHexagon size={10} color="#fff"/> Cadastro</Link></li>
+              <li><Link to="/"><FiHexagon size={10} color="#fff"/> Doação</Link></li>
+              <li><Link to="/"><FiHexagon size={10} color="#fff"/> História</Link></li>
+              <li><Link to="/"><FiHexagon size={10} color="#fff"/> Classes</Link></li>
+            </div>
+            <div className="imgbottom">
+              <img src={ImgDivMenu} alt=""/> 
+            </div>
+          </div>
           <div className="btn-play">
-            <h2>Lineage II</h2>
+            <img src={logo} alt=""/>
+            <div className="interlude-logo">
+              <img src={interludeLogo} alt=""/>
+            </div>
             <Link to="/" className="myButton">JOGAR</Link>
           </div>
           <div className="container-menu-right">
@@ -35,10 +39,10 @@ export default function PlayNow(){
               <img src={ImgDivMenu} alt=""/>
             </div>
             <div className="menu">
-              <li><Link><FiInstagram size={20} color="#fff"/></Link></li>
-              <li><Link><FiFacebook size={20} color="#fff"/></Link></li>
-              <li><Link><FiGithub size={20} color="#fff"/></Link></li>
-              <li><Link><FiLink size={20} color="#fff"/></Link></li>
+              <li><Link to="/"><FiInstagram size={20} color="#fff"/></Link></li>
+              <li><Link to="/"><FiFacebook size={20} color="#fff"/></Link></li>
+              <li><Link to="/"><FiGithub size={20} color="#fff"/></Link></li>
+              <li><Link to="/"><FiLink size={20} color="#fff"/></Link></li>
             </div>
             <div className="imgbottom">
               <img src={ImgDivMenu} alt=""/>

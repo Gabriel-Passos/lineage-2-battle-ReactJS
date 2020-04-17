@@ -9,9 +9,9 @@ export default function Home(){
   return (
     <>
     <Header />
-    <body className="bodyHome">
+    <div className="bodyHome">
       <PLayNow />
-    </body>
+    </div>
     </>
   );
 }

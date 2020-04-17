@@ -17,6 +17,10 @@
 }
 
 .container-playnow .container-menu-left .menu{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
 	margin: 50px 0;
 }
 
@@ -47,11 +51,8 @@
 	width: 80%;
 }
 
-.container-playnow .btn-play h2{
-	font-size: 50px;
-	color: #fff;
-	margin-bottom: 10%;
-	font-family: L2, sans-serif;
+.container-playnow .btn-play img{
+	margin-bottom: 1%;
 }
 
 .container-playnow .btn-play a{
@@ -70,6 +71,18 @@
 
 .container-playnow .btn-play .myButton:hover {
 	background-color:rgba(255, 236, 100, 0.9);
+}
+
+.container-playnow .btn-play .interlude-logo{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.container-playnow .btn-play .interlude-logo img{
+	max-width: 30%;
+	height: auto;
+	margin-bottom: 20%;
 }
 
 .container-playnow .container-menu-right{
