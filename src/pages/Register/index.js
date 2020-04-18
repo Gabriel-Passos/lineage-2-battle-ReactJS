@@ -15,7 +15,7 @@ export default function Register() {
 
   const [login, setUsername] = useState('');
   // const [email, setEmail] = useState('');
-  const [fixo, setFixo] = useState(['MMD', 'HSD', 'HSS']);
+  // const [fixo, setFixo] = useState(['MMD', 'HSD', 'HSS']);
   const [senha, setPassword] = useState('');
   const [confirmarsenha, setPasswordConfirmed] = useState('');
 
@@ -26,7 +26,7 @@ export default function Register() {
 
     const data =({
       login,
-      fixo,
+      // fixo,
       senha,
       confirmarsenha
     });
@@ -55,11 +55,11 @@ export default function Register() {
             value={login}
             onChange={e => setUsername(e.target.value)}
           />
-          <input 
+          {/* <input 
             type="text"
             value={fixo}
             onChange={e => setFixo(e.target.value)}
-          />
+          /> */}
           <input 
             type="password" 
             placeholder="Senha"

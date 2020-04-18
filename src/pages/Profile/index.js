@@ -1,5 +1,5 @@
-import React, {useState, useEffect} from 'react';
-import { Link, useHistory } from 'react-router-dom';
+import React, { useEffect} from 'react';
+import { Link} from 'react-router-dom';
 import {FiHexagon, FiInstagram, FiFacebook, FiGithub, FiLink} from 'react-icons/fi'
 
 import Header from '../../components/Header/Header';
@@ -15,7 +15,7 @@ import interludeLogo from '../../assets/images/interlude-logo.png';
 export default function Profile() {
   // const [profile, setProfile] = useState([]);
 
-  const history = useHistory();
+  // const history = useHistory();
 
   const userName = localStorage.getItem('userName');
 
@@ -23,10 +23,10 @@ export default function Profile() {
     api.get('profile').then(response => {});
   });
 
-  function handleLogout(){
-    localStorage.clear();
-    history.push('/');
-  }
+  // function handleLogout(){
+  //   localStorage.clear();
+  //   history.push('/');
+  // }
 
     return (
       <>
