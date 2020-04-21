@@ -23,23 +23,23 @@ export default function Profile() {
               <h1>Menu</h1>
             </div>
             <h2>Characters</h2>
-            <Link to="">Personagens</Link>
-            <Link to="">Destravar char</Link>
-            <Link to="">Informações</Link>
+            <Link to="" id="btnPerson">Personagens</Link>
+            <Link to="" id="btnUnlockChar">Destravar char</Link>
+            <Link to="" id="btnInfo">Informações</Link>
             <h2>Conta</h2>
-            <Link to="">Informações da conta</Link>
-            <Link to="">Alterar senha</Link>
-            <Link to="">Alterar E-mail</Link>
+            <Link to="" id="btnInfoAcc">Informações da conta</Link>
+            <Link to="" id="btnAlterPass">Alterar senha</Link>
+            <Link to="" id="btnAlterEmail">Alterar E-mail</Link>
             <h2>Recursos</h2>
-            <Link to="">Ver inventário</Link>
-            <Link to="">Live map</Link>
-            <Link to="">Leilão</Link>
-            <Link to="">Boss live</Link>
+            <Link to="" id="btnViewInve">Ver inventário</Link>
+            <Link to="" id="btnLiveMap">Live map</Link>
+            <Link to="" id="btnLeilao">Leilão</Link>
+            <Link to="" id="btnBossLive">Boss live</Link>
             <h2>Suporte</h2>
-            <Link to="">Enviar e-mail</Link>
+            <Link to="" id="btnContatEmail">Enviar e-mail</Link>
             <h2>Shop</h2>
-            <Link to="">Histórico de compra</Link>
-            <Link to="">Produtos</Link>
+            <Link to="" id="btnHistCompra">Histórico de compra</Link>
+            <Link to="" id="btnShop">Produtos</Link>
           </div>
         </aside>
         <section className="container-section-profile">
