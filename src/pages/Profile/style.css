@@ -1,120 +1,108 @@
 .container-profile{
+	display: flex;
+	font-family: Roboto, sans-serif;
+}
+
+.container-profile h1,h2{
+	text-transform: uppercase;
+	font-size: 16px;
+}
+
+.container-profile a{
+	font-size: 14px;
+	font-weight: 300;
+
+	text-transform: uppercase;
+	
+	color: #686868;
+}
+
+.container-profile a:hover{
+	color: #ffffff;
+}
+
+.container-profile .container-aside-profile{
+	display: flex;
+	flex-direction: column;
+
+	background-color: #242424;
+	color: #ffffff;
+}
+
+.container-profile .container-aside-profile .aside-top{
+	text-align: center;
+}
+
+.container-profile .container-aside-profile .aside-top h1{
+	margin-top: 10%;
+}
+
+.container-profile .container-aside-profile .aside-top img{
+	max-width: 50%;
+	height: auto;
+
+	margin: 10% auto;
+}
+
+.container-profile .container-aside-profile .aside-bottom{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+
+	padding-bottom: 13%;
+}
+
+.container-profile .container-aside-profile .aside-bottom h2{
+	margin-top: 10%;
+}
+
+.container-profile .container-aside-profile .aside-bottom .menu-text-profile{
+	background-color: #B1B1B1;
 	width: 100%;
-  height: 745px;
-  background-size: 100% auto;
-  background-image: url('../../assets/images/back.png');
-	background-repeat: no-repeat;
+	line-height: 5vh;
+	text-align: center;
+
+	color: #000000;
+
+	margin: 10% auto 0 auto;
+}
+
+.container-profile .container-section-profile .container-header-profile{
 	display: flex;
 	justify-content: center;
-	align-items: center;
+
+	width: 84vw;
+	line-height: 5vh;
+
+	background-color: #242424;
 }
 
-.container-profile .container-menu-left{
-	width: 10%;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	justify-content: center;
-	height: auto;
+.container-profile .container-section-profile .container-header-profile h1{
+	margin-left: auto;
+	color: #ffffff;
 }
 
-.container-profile .container-menu-left .menu{
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	flex-direction: column;
-	margin: 50px 0;
+.container-profile .container-section-profile .container-header-profile a{
+	margin-left: auto;
+	margin-right: 20px;
 }
 
-.container-profile .container-menu-left .imgbottom img{
-	transform: rotate(180deg);
+.container-profile .container-section-profile  .content-profile{
+	height: 91vh;
 }
 
-.container-profile .container-menu-left .menu li{
-	margin: 15px 0;
-}
-
-.container-profile .container-menu-left .menu a{
-	font-size: 15px;
-	font-family: Gotham,sans-serif;
-	font-weight: bold;
-	color: #535353;
-}
-
-.container-profile .container-menu-left .menu a:hover{
-	color: #fff;
-}
-
-.container-profile .btn-play{
+.container-profile .container-section-profile  .footer-profile{
 	display: flex;
 	justify-content: center;
-	align-items: center;
-	flex-direction: column;
-	width: 80%;
+
+	width: 84vw;
+	line-height: 5vh;
+
+	background-color: #242424;
 }
 
-.container-profile .btn-play img{
-	margin-bottom: 1%;
-}
+.container-profile .container-section-profile .footer-profile h2{
+	color: #ffffff;
 
-.container-profile .btn-play a{
-	color:#fff;
-	font-size: 32px;
-	text-shadow:  0 0 1em rgba(0, 0, 0, 0.9);
-}
-
-.container-profile .btn-play .myButton {
-	background-color: rgba(255, 236, 100, 0.7);
-	border-radius: 6px;
-	padding: 8px 70px;
-	margin: 0 auto;
-}
-
-
-.container-profile .btn-play .myButton:hover {
-	background-color:rgba(255, 236, 100, 0.9);
-}
-
-.container-profile .btn-play .interlude-logo{
-	display: flex;
-	justify-content: center;
-	align-items: center;
-}
-
-.container-profile .btn-play .interlude-logo img{
-	max-width: 40%;
-	height: auto;
-	margin-bottom: 20%;
-}
-
-.container-profile .container-menu-right{
-	width: 10%;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	justify-content: center;
-	height: auto;
-}
-
-.container-profile .container-menu-right .menu{
-	margin: 50px 0;
-}
-
-.container-profile .container-menu-right .imgbottom img{
-	transform: rotate(180deg);
-}
-
-.container-profile .container-menu-right .menu li{
-	margin: 15px 0;
-}
-
-.container-profile .container-menu-right .menu a{
-	font-size: 15px;
-	font-family: Gotham,sans-serif;
-	font-weight: bold;
-	color: #535353;
-}
-
-.container-profile .container-menu-right .menu a:hover{
-	color: #fff;
+	margin-right: 20px;
 }

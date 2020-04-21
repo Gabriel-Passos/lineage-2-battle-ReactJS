@@ -1,75 +1,60 @@
-import React, { useEffect} from 'react';
-import { Link} from 'react-router-dom';
-import {FiHexagon, FiInstagram, FiFacebook, FiGithub, FiLink} from 'react-icons/fi'
-
-import Header from '../../components/Header/Header';
+import React from 'react';
+import {Link} from 'react-router-dom';
 
 import './style.css';
 
-import api from '../../services/api';
+import ImgTest from '../../assets/logo.png';
 
-import ImgDivMenu from '../../assets/images/imgDivMenu.png';
-import logo from '../../assets/images/l2-logo.png';
-import interludeLogo from '../../assets/images/interlude-logo.png';
+// import api from '../../services/api';
 
 export default function Profile() {
-  // const [profile, setProfile] = useState([]);
 
-  // const history = useHistory();
-
-  const userName = localStorage.getItem('userName');
-
-  useEffect(() => {
-    api.get('profile').then(response => {});
-  });
-
-  // function handleLogout(){
-  //   localStorage.clear();
-  //   history.push('/');
-  // }
-
-    return (
-      <>
-        <Header />
-        <div className="container-profile">
-          <div className="container-menu-left">
-            <div className="imgtop">
-              <img src={ImgDivMenu} alt=""/>
-            </div>
-            <div className="menu">
-              <li><Link to="/"><FiHexagon size={10} color="#fff"/> {userName}</Link></li>
-              <li><Link to="/"><FiHexagon size={10} color="#fff"/> Informação</Link></li>
-              <li><Link to="/register"><FiHexagon size={10} color="#fff"/> Cadastro</Link></li>
-              <li><Link to="/"><FiHexagon size={10} color="#fff"/> Doação</Link></li>
-              <li><Link to="/"><FiHexagon size={10} color="#fff"/> História</Link></li>
-              <li><Link to="/"><FiHexagon size={10} color="#fff"/> Classes</Link></li>
-            </div>
-            <div className="imgbottom">
-              <img src={ImgDivMenu} alt=""/> 
-            </div>
+  return (
+    <>
+      <section className="container-profile">
+        <aside className="container-aside-profile">
+          <div className="aside-top">
+            <h1>Bem Vindo</h1>
+            <img src={ImgTest} alt=""/>
+            <h2>Gayzin</h2>
           </div>
-          <div className="btn-play">
-            <img src={logo} alt=""/>
-            <div className="interlude-logo">
-              <img src={interludeLogo} alt=""/>
+          <div className="aside-bottom">
+            <div className="menu-text-profile">
+              <h1>Menu</h1>
             </div>
-            <Link to="/" className="myButton">JOGAR</Link>
+            <h2>Characters</h2>
+            <Link to="">Personagens</Link>
+            <Link to="">Destravar char</Link>
+            <Link to="">Informações</Link>
+            <h2>Conta</h2>
+            <Link to="">Informações da conta</Link>
+            <Link to="">Alterar senha</Link>
+            <Link to="">Alterar E-mail</Link>
+            <h2>Recursos</h2>
+            <Link to="">Ver inventário</Link>
+            <Link to="">Live map</Link>
+            <Link to="">Leilão</Link>
+            <Link to="">Boss live</Link>
+            <h2>Suporte</h2>
+            <Link to="">Enviar e-mail</Link>
+            <h2>Shop</h2>
+            <Link to="">Histórico de compra</Link>
+            <Link to="">Produtos</Link>
           </div>
-          <div className="container-menu-right">
-            <div className="imgtop">
-              <img src={ImgDivMenu} alt=""/>
-            </div>
-            <div className="menu">
-              <li><Link to="/"><FiInstagram size={20} color="#fff"/></Link></li>
-              <li><Link to="/"><FiFacebook size={20} color="#fff"/></Link></li>
-              <li><Link to="/"><FiGithub size={20} color="#fff"/></Link></li>
-              <li><Link to="/"><FiLink size={20} color="#fff"/></Link></li>
-            </div>
-            <div className="imgbottom">
-              <img src={ImgDivMenu} alt=""/>
-            </div>
+        </aside>
+        <section className="container-section-profile">
+          <header className="container-header-profile">
+            <h1>Painel do usuário</h1>
+            <Link to="/">Sair</Link>
+          </header>
+          <div className="content-profile">
+
           </div>
-        </div>        
-      </>
-    )
+          <footer className="footer-profile">
+            <h2>Sessão termina: 20:36</h2>
+          </footer>
+        </section>
+      </section>
+    </>
+  )
 }
