@@ -1,0 +1,54 @@
+.container-personagem{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  margin-top: 5vh;
+  margin-left: 15%;
+  
+  flex-wrap: wrap;
+}
+
+.container-personagem .card{
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  width: 15%;
+  border-radius: 5px;
+  padding-bottom: 8px;
+  
+  margin: 1%;
+}
+
+.container-personagem .card:hover {
+  box-shadow: 0 12px 20px 0 rgba(0,0,0,0.2);
+}
+
+.container-personagem .card img {
+  max-width: 100%;
+  height: auto;
+
+  border-radius: 5px 5px 0 0;
+
+  margin-bottom: 15px;
+}
+
+.container-personagem .card .dados-char{
+  margin: 0 0 40px 20px;
+}
+
+.container-personagem .card .dados-char h3{
+  font-size: 14px;
+  font-weight: 300;
+
+  margin-bottom: 5px;
+}
+
+.container-personagem .card a{
+  font-weight: 700;
+  color: #3b3b3b;
+  margin: 20px;
+}
+
+.container-personagem .card a:hover{
+  color: #919191;
+}
