@@ -7,27 +7,27 @@ import ImgTest from '../../assets/logo.png';
 
 import Personagens from '../../components/ProfilePage/Personagens';
 
-import api from '../../services/api';
+// import api from '../../services/api';
 
 export default function Profile() {
-  const [users, setUsers] = useState(false);
+  // const [users, setUsers] = useState(false);
 
-  const getUsers = async () => {
-    const response = await api.get('/boss.php');
-    setUsers(response.data);
-  }
+  // const getUsers = async () => {
+  //   const response = await api.get('/');
+  //   setUsers(response.data);
+  // }
 
-  useEffect(() => {
-    getUsers();
-  }, [])
+  // useEffect(() => {
+  //   getUsers();
+  // }, [])
 
-  if(users === false){
-    return(
-      <>
-        Carregando dados...
-      </>
-    )
-  } else{
+  // if(users === false){
+  //   return(
+  //     <>
+  //       Carregando dados...
+  //     </>
+  //   )
+  // } else{
     return (
       <>
         <section className="container-profile">
@@ -39,7 +39,7 @@ export default function Profile() {
             <div className="aside-top">
               <h1>Bem Vindo(a)</h1>
               <img src={ImgTest} alt=""/>
-              <h2>{users[0]['boss_name']}</h2>
+              {/* <h2>{users[0]['boss_name']}</h2> */}
             </div>
             <div className="aside-bottom">
               <div className="menu-text-profile">
@@ -76,5 +76,5 @@ export default function Profile() {
         </section>
       </>
     )
-  }
+  // }
 }

@@ -26,10 +26,14 @@
 .container-personagem .card img {
   max-width: 100%;
   height: auto;
-
+  
   border-radius: 5px 5px 0 0;
-
+  
   margin-bottom: 15px;
+}
+
+.container-personagem .card hr{
+  color: red;
 }
 
 .container-personagem .card .dados-char{
@@ -41,7 +45,14 @@
   font-weight: 300;
 
   margin-bottom: 5px;
+
+  text-transform: uppercase;
 }
+
+.container-personagem .card .dados-char b{
+  margin-right: 2%;
+}
+
 
 .container-personagem .card a{
   font-weight: 700;
