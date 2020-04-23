@@ -21,7 +21,19 @@
 	color: #ffffff;
 }
 
- .container-header-profile {
+.container-profile .container-aside-profile{
+	display: flex;
+	flex-direction: column;
+
+	height: 0 auto;
+
+	position: absolute;
+
+	background-color: #242424;
+	color: #ffffff;
+}
+
+.container-profile .container-aside-profile .container-header-profile {
 	display: flex;
 	justify-content: space-around;
 
@@ -34,24 +46,14 @@
 	line-height: 3vh;
 }
 
- .container-header-profile a{
+.container-profile .container-aside-profile  .container-header-profile button{
+	border: 0;
+	background-color: transparent;
 	color: #000000;
 }
 
- .container-header-profile a:hover{
+.container-profile .container-aside-profile  .container-header-profile button:hover{
 	color: #666666;
-}
-
-.container-profile .container-aside-profile{
-	display: flex;
-	flex-direction: column;
-
-	height: 0 auto;
-
-	position: absolute;
-
-	background-color: #242424;
-	color: #ffffff;
 }
 
 .container-profile .container-aside-profile .aside-top{

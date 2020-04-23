@@ -1,5 +1,5 @@
-import React, {useState, useEffect} from 'react';
-import {Link, Route} from 'react-router-dom';
+import React from 'react';
+import {Link, Route, useHistory} from 'react-router-dom';
 
 import './style.css';
 
@@ -11,6 +11,10 @@ import Personagens from '../../components/ProfilePage/Personagens';
 
 export default function Profile() {
   // const [users, setUsers] = useState(false);
+
+  const history = useHistory();
+
+  const userName = localStorage.getItem('userName');
 
   // const getUsers = async () => {
   //   const response = await api.get('/');
@@ -28,18 +32,24 @@ export default function Profile() {
   //     </>
   //   )
   // } else{
+
+  function handleLogout(){
+    localStorage.clear();
+
+    history.push('/');
+  }
     return (
       <>
         <section className="container-profile">
           <aside className="container-aside-profile">
             <header className="container-header-profile">
               <h1>Painel do usuário</h1>
-              <Link to="/">Sair</Link>
+              <button onClick={handleLogout}>Sair</button>
             </header>
             <div className="aside-top">
               <h1>Bem Vindo(a)</h1>
               <img src={ImgTest} alt=""/>
-              {/* <h2>{users[0]['boss_name']}</h2> */}
+              <h2>{userName}</h2>
             </div>
             <div className="aside-bottom">
               <div className="menu-text-profile">

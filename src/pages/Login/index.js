@@ -14,23 +14,22 @@ export default function Login() {
   async function handleLogin(e){
     e.preventDefault();
 
-    const data =({
-      login,
-      senha
-    });
-
     try{
-       await api.post('/login.php', data);
+      const response = await api.post('/login.php', {login, senha});
 
-      // if(response.data.result === true){
+      localStorage.setItem('userName', login);
+
+      if(response.data === true){
         history.push('/profile');
-      
+      } else{
+        alert('Dados incorretos.')
+      }
+
     }catch(err){
       alert('Falha no login, tente novamente mais tarde.');
     }
-
   }
-
+ 
   return (
     <div className="container-login">
       <div className="content-login">
