@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 const api = axios.create({
-  baseURL: `http://cors-anywhere.herokuapp.com/http://l2infinityworld.com/function/`,
+  baseURL: `http://l2infinityworld.com/function/`,
   headers: {
     'Content-Type': 'application/json'
   }

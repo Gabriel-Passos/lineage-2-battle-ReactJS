@@ -29,7 +29,7 @@ li{
 }
 
 html{
-    height: 100vh;
+    height: 62.5%;
 }
 
 body{
@@ -38,8 +38,6 @@ body{
     /* background-image: url(./assets/background.jpg); */
     background-size: cover;
     background-repeat: no-repeat;
-
-    height: 100vh;
 }
 
 input, button, textarea{
