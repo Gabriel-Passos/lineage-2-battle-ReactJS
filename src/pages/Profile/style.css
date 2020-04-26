@@ -27,8 +27,6 @@
 
 	height: 100vh;
 
-	position: absolute;
-
 	background-color: #242424;
 	color: #ffffff;
 }
@@ -48,13 +46,15 @@
 
 .container-profile .container-aside-profile  .container-header-profile button{
 	border: 0;
-	background-color: transparent;
+	background-color: 1px solid #cccccc;
+	padding:  0 8px;
 	color: #000000;
 
 	cursor: pointer;
 }
 
 .container-profile .container-aside-profile  .container-header-profile button:hover{
+	background-color: #9c9c9c;
 	color: #666666;
 }
 

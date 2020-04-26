@@ -28,12 +28,18 @@ li{
     list-style: none;
 }
 
+html{
+    height: 100vh;
+}
+
 body{
     font: 400 14px 'Ceviche One','Black Ops One', Roboto, sans-serif;
     -webkit-font-smoothing: antialiased;
     /* background-image: url(./assets/background.jpg); */
     background-size: cover;
     background-repeat: no-repeat;
+
+    height: 100vh;
 }
 
 input, button, textarea{
