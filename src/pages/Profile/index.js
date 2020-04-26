@@ -1,5 +1,6 @@
 import React from 'react';
 import {Link, Route, useHistory} from 'react-router-dom';
+import {FiPower} from 'react-icons/fi'
 
 import './style.css';
 
@@ -44,7 +45,7 @@ export default function Profile() {
           <aside className="container-aside-profile">
             <header className="container-header-profile">
               <h1>Painel do usuário</h1>
-              <button onClick={handleLogout}>Sair</button>
+              <button onClick={handleLogout}><FiPower size={16} color="#000000"/></button>
             </header>
             <div className="aside-top">
               <h1>Bem Vindo(a)</h1>
@@ -56,7 +57,7 @@ export default function Profile() {
                 <h1>Menu</h1>
               </div>
               <h2>Characters</h2>
-              <Link to="/profile/personagens"id="btnPerson" >Personagens</Link>
+              <Link to="/profile/personagens" id="btnPerson" >Personagens</Link>
               <Link to="/profile" id="btnUnlockChar" >Destravar char</Link>
               <Link to="/profile" id="btnInfo" >Informações</Link>
               <h2>Conta</h2>
@@ -80,7 +81,7 @@ export default function Profile() {
           </aside>
           <section className="container-section-profile">
             <div className="content-profile">
-              <Route path="/profile/personagens" render={()=>(<Personagens />)} />
+              <Route path="/profile/personagens" exact render={()=>(<Personagens />)} />
             </div>
           </section>
         </section>
