@@ -7,6 +7,7 @@ import './style.css';
 import ImgTest from '../../assets/logo.png';
 
 import Personagens from '../../components/ProfilePage/Personagens';
+import Boss from '../../components/ProfilePage/Boss';
 
 // import api from '../../services/api';
 
@@ -68,7 +69,7 @@ export default function Profile() {
               <Link to="/profile" id="btnViewInve" >Ver inventário</Link>
               <Link to="/profile" id="btnLiveMap" >Live map</Link>
               <Link to="/profile" id="btnLeilao" >Leilão</Link>
-              <Link to="/profile" id="btnBossLive" >Boss live</Link>
+              <Link to="/profile/boss" id="btnBossLive" >Boss live</Link>
               <h2>Suporte</h2>
               <Link to="/profile" id="btnContatEmail" >Enviar e-mail</Link>
               <h2>Shop</h2>
@@ -82,6 +83,7 @@ export default function Profile() {
           <section className="container-section-profile">
             <div className="content-profile">
               <Route path="/profile/personagens" exact render={()=>(<Personagens />)} />
+              <Route path="/profile/boss" exact render={()=>(<Boss />)} />
             </div>
           </section>
         </section>

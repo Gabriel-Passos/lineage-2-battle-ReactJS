@@ -19,7 +19,7 @@ export default function Header(){
       <header>
 
         <div className="header-menu">
-          <Link to="/" className="header-menu-mobile" onClick=""><FiAlignRight /></Link>
+          <Link to="/" className="header-menu-mobile" ><FiAlignRight /></Link>
         </div>
 
         <nav className="container-header">
