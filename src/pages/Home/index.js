@@ -12,7 +12,7 @@ import logo from '../../assets/images/l2-logo.png';
 import interludeLogo from '../../assets/images/interlude-logo.png';
 
 export default function Home(){
-  return (
+   return (
     <>
       <Header />
       <div className="container-home home-mobile">

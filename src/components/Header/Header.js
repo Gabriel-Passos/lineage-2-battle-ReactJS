@@ -1,3 +1,4 @@
+/* eslint-disable no-unreachable */
 import React from 'react';
 import { Link } from 'react-router-dom'
 import {FiAlignRight} from 'react-icons/fi';
@@ -7,13 +8,19 @@ import {FiAlignRight} from 'react-icons/fi';
 import './style.css';
 
 export default function Header(){
+  // function onNav(e){
+  //   e.preventDefault();
+  //   const menu = document.querySelector('.header-menu-mobile');
+  //   menu.addEventListener('click').classList.toggle('open');
+  // }
+
   return (
     <>
       <header>
 
-      <div className="header-menu header-menu-mobile">
-        <Link to="/"><FiAlignRight /></Link>
-      </div>
+        <div className="header-menu">
+          <Link to="/" className="header-menu-mobile" onClick=""><FiAlignRight /></Link>
+        </div>
 
         <nav className="container-header">
           <div className="header-menu">
@@ -27,5 +34,5 @@ export default function Header(){
         </nav>
       </header>
     </>
-  )
+  )  
 }

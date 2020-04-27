@@ -45,7 +45,7 @@ header{
 }
 
 @media (min-width: 950px){
-  header .header-menu-mobile a{
+  header .header-menu-mobile{
     display: none !important;
   }
 }
@@ -58,5 +58,18 @@ header{
   header .header-menu a{
     font-size: 22px;
     color: #000000;
+  }
+
+  header .header-menu .header-menu-mobile + nav{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(255, 255, 255, .9);
   }
 }

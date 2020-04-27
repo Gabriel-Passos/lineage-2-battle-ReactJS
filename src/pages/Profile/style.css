@@ -25,7 +25,9 @@
 	display: flex;
 	flex-direction: column;
 
-	height: 60rem;
+	min-height: 100vh;
+
+	width: 15vw;
 
 	position: absolute;
 
@@ -98,6 +100,7 @@
 
 .container-profile .container-aside-profile .footer-profile{
 	margin-top: 5vh;
+	margin-bottom: 5vh;
 }
 
 .container-profile .container-section-profile  .content-profile{
