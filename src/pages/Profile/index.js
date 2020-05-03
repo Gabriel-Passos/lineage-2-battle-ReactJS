@@ -8,32 +8,12 @@ import ImgTest from '../../assets/logo.png';
 
 import Personagens from '../../components/ProfilePage/Personagens';
 import Boss from '../../components/ProfilePage/Boss';
-
-// import api from '../../services/api';
+import Inventario from '../../components/ProfilePage/Inventario';
 
 export default function Profile() {
-  // const [users, setUsers] = useState(false);
-
   const history = useHistory();
 
   const userName = localStorage.getItem('userName');
-
-  // const getUsers = async () => {
-  //   const response = await api.get('/');
-  //   setUsers(response.data);
-  // }
-
-  // useEffect(() => {
-  //   getUsers();
-  // }, [])
-
-  // if(users === false){
-  //   return(
-  //     <>
-  //       Carregando dados...
-  //     </>
-  //   )
-  // } else{
 
   function handleLogout(){
     localStorage.clear();
@@ -42,7 +22,7 @@ export default function Profile() {
   }
     return (
       <>
-        <section className="container-profile">
+        <section className="container-profile"> 
           <aside className="container-aside-profile">
             <header className="container-header-profile">
               <h1>Painel do usuário</h1>
@@ -59,14 +39,12 @@ export default function Profile() {
               </div>
               <h2>Characters</h2>
               <Link to="/profile/personagens" id="btnPerson" >Personagens</Link>
-              <Link to="/profile" id="btnUnlockChar" >Destravar char</Link>
-              <Link to="/profile" id="btnInfo" >Informações</Link>
               <h2>Conta</h2>
               <Link to="/profile" id="btnInfoAcc" >Informações da conta</Link>
               <Link to="/profile" id="btnAlterPass" >Alterar senha</Link>
               <Link to="/profile" id="btnAlterEmail" >Alterar E-mail</Link>
               <h2>Recursos</h2>
-              <Link to="/profile" id="btnViewInve" >Ver inventário</Link>
+              <Link to="/profile/inventario" id="btnViewInve" >Ver inventário</Link>
               <Link to="/profile" id="btnLiveMap" >Live map</Link>
               <Link to="/profile" id="btnLeilao" >Leilão</Link>
               <Link to="/profile/boss" id="btnBossLive" >Boss live</Link>
@@ -84,6 +62,7 @@ export default function Profile() {
             <div className="content-profile">
               <Route path="/profile/personagens" exact render={()=>(<Personagens />)} />
               <Route path="/profile/boss" exact render={()=>(<Boss />)} />
+              <Route path="/profile/inventario" exact render={()=>(<Inventario />)} />
             </div>
           </section>
         </section>

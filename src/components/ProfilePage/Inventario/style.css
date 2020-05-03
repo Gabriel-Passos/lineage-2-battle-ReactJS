@@ -1,0 +1,49 @@
+.container-inventario{
+  display: flex;
+
+  margin-left: 15vw;
+
+}
+
+.container-inventario .header-inventario{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  
+  width: 85vw;
+  margin-top: 5vh;
+}
+
+.container-inventario .header-inventario h1{
+  font-size: 22px;
+}
+
+.container-inventario .header-inventario form{
+  display: flex;
+  align-items: center;
+}
+
+.container-inventario .header-inventario form input{
+  border: 1px solid #cccccc;
+  border-radius: 5px;
+
+  padding: 8px;
+  margin-top: 1vh;
+  width: 20vw;
+}
+
+.container-inventario .header-inventario form button{
+  border: 1px solid #cccccc;
+  border-radius: 10px;
+
+  padding: 8px;
+  margin-top: 1vh;
+  margin-left: 1vw;
+
+  cursor: pointer;
+}
+
+.container-inventario .header-inventario form button:hover{
+  opacity: .5;
+}

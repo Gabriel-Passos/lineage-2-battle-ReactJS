@@ -1,3 +1,54 @@
 .container-boss{
-  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 10vw;
+
+  height: 100vh;
+
+  flex-wrap: wrap;
+
+  background-image: url('../../../assets/images/bg.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  overflow: auto;
+}
+
+.container-boss .boss-card {
+  display: flex;
+  width: 30vw;
+  padding: 10px;
+  margin: 8px;
+
+  border-radius: 5px;
+
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+.container-boss .boss-card img {
+  max-width: 8vw;
+  height: auto;
+}
+
+.container-boss .boss-info{
+  display: flex;
+  flex-direction: column;
+
+  text-align: justify;
+  margin-left: 1vw;
+}
+
+.container-boss .boss-info .header-boss{
+  display: flex;
+  justify-content: space-between;
+}
+
+.container-boss .boss-info .history-boss{
+  margin: 10px auto;
+}
+
+.container-boss .boss-info .footer-boss{
+  display: flex;
+  justify-content: space-between;
 }
