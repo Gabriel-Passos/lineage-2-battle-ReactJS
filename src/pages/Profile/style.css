@@ -49,17 +49,19 @@
 }
 
 .container-profile .container-aside-profile  .container-header-profile button{
+	display: flex;
+	align-items: center;
+
 	border: 0;
 	background-color: 1px solid #cccccc;
-	padding:  0 8px;
+	padding: 8px;
 	color: #000000;
 
 	cursor: pointer;
 }
 
 .container-profile .container-aside-profile  .container-header-profile button:hover{
-	background-color: #9c9c9c;
-	color: #666666;
+	opacity: .7;
 }
 
 .container-profile .container-aside-profile .aside-top{

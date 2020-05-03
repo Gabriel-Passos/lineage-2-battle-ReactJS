@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React, {useState, useEffect} from 'react';
 import { Link, useHistory } from 'react-router-dom';
 import {FiArrowLeft, FiArrowRight} from 'react-icons/fi';
 
@@ -10,6 +10,11 @@ export default function Login() {
   const [login, setLogin] = useState('');
   const [senha, setSenha] = useState('');
   const history = useHistory();
+
+  useEffect(()=>{
+    localStorage.clear();
+    sessionStorage.clear();
+  }, [])
 
   async function handleLogin(e){
     e.preventDefault();
