@@ -1,10 +1,8 @@
 import React from 'react';
 
-
 import './style.css';
 
 export default function Conteudo(){
-
     return(
         <>
         <div className="content-principal">

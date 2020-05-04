@@ -2,7 +2,7 @@ header{
   display: flex;
   align-items: center;
   flex-wrap: wrap;
-  background-color: black;
+  background-color: #323232;
 }
 
 .container-header{
@@ -44,9 +44,8 @@ header{
   color: yellow;
   border-radius: 5px;
 	text-shadow: 0 0 15px #fff;
-    background: rgba(255,255,255,0.1);
-  transition: background 2s,text-shadow 0.4s;
-
+  background: rgba(255,255,255,0.1);
+  transition: background 2s, text-shadow 0.4s;
 }
 
 @media (min-width: 950px){
