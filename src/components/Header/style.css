@@ -2,6 +2,7 @@ header{
   display: flex;
   align-items: center;
   flex-wrap: wrap;
+  background-color: black;
 }
 
 .container-header{
@@ -27,8 +28,6 @@ header{
 .header-button{
   background-color: transparent;
   padding: 5px 0;
-  border: 2px solid #ffbb00;
-  border-radius: 8%;
   margin-right: 10px;    
 }
 
@@ -36,12 +35,18 @@ header{
   font-size: 23px;
   /* font-weight: bold; */
   padding: 5px 10px;
-  color: #ffbb00;
+  color: white;
+
 }
 
 .header-button a:hover{
-  background-color: #ffbb00;
-  color: #000000;
+  background-color:white;
+  color: yellow;
+  border-radius: 5px;
+	text-shadow: 0 0 15px #fff;
+    background: rgba(255,255,255,0.1);
+  transition: background 2s,text-shadow 0.4s;
+
 }
 
 @media (min-width: 950px){
