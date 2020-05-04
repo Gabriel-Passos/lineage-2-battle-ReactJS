@@ -4,6 +4,7 @@ import {FiHexagon, FiInstagram, FiFacebook, FiGithub, FiLink} from 'react-icons/
 
 
 import Header from '../../components/Header/Header';
+import Conteudo from '../../components/conteudo/'
 
 import './style.css';
 
@@ -21,12 +22,12 @@ export default function Home(){
             <img src={ImgDivMenu} alt=""/>
           </div>
           <div className="menu">
-            <li><Link to="/"><FiHexagon size={10} color="#fff"/> Home</Link></li>
-            <li><Link to="/"><FiHexagon size={10} color="#fff"/> Informação</Link></li>
-            <li><Link to="/register"><FiHexagon size={10} color="#fff"/> Cadastro</Link></li>
-            <li><Link to="/"><FiHexagon size={10} color="#fff"/> Doação</Link></li>
-            <li><Link to="/"><FiHexagon size={10} color="#fff"/> História</Link></li>
-            <li><Link to="/"><FiHexagon size={10} color="#fff"/> Classes</Link></li>
+            <li><Link to="/"><FiHexagon size={10} color="#fff" className="optn-menu-icon"/> Home</Link></li>
+            <li><Link to="/"><FiHexagon size={10} color="#fff" className="optn-menu-icon"/> Informação</Link></li>
+            <li><Link to="/register"><FiHexagon size={10} color="#fff" className="optn-menu-icon"/> Cadastro</Link></li>
+            <li><Link to="/"><FiHexagon size={10} color="#fff" className="optn-menu-icon"/> Doação</Link></li>
+            <li><Link to="/"><FiHexagon size={10} color="#fff" className="optn-menu-icon"/> História</Link></li>
+            <li><Link to="/"><FiHexagon size={10} color="#fff" className="optn-menu-icon"/> Classes</Link></li>
           </div>
           <div className="imgbottom">
             <img src={ImgDivMenu} alt=""/> 
@@ -44,7 +45,7 @@ export default function Home(){
             <img src={ImgDivMenu} alt=""/>
           </div>
           <div className="menu">
-              <li><Link to="/"><FiInstagram size={20} color="#fff"/></Link></li>
+              <li><Link to="/"><FiInstagram size={20} color="#fff" className="optn-menu-icon-rigth"/></Link></li>
               <li><Link to="/"><FiFacebook size={20} color="#fff"/></Link></li>
               <li><Link to="/"><FiGithub size={20} color="#fff"/></Link></li>
               <li><Link to="/"><FiLink size={20} color="#fff"/></Link></li>
@@ -54,6 +55,7 @@ export default function Home(){
           </div>
         </div>
       </div>
+      <Conteudo />
     </>
   );
 }
