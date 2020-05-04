@@ -6,14 +6,15 @@
 }
 
 .separator{
-    background-image: url('../../assets/images/separador1.png');
-    background-color:black;
+
+
     background-position: center;
     background-repeat: no-repeat;
-    background-size: 80%;
+    background-size: 80% auto;
+    transform: rotate(180deg);
     padding: 0;
     margin: 0;
 
-    height: 30px;
+    height:30px;
     width: 100%;
 }

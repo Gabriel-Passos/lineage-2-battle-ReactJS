@@ -2,13 +2,18 @@ header{
   display: flex;
   align-items: center;
   flex-wrap: wrap;
-  background-color: black;
+  width: 100%;
+  background: hsla(0,0%,96.9%,.15);
+  position: fixed;
+
+
 }
 
 .container-header{
   display: flex;
   align-items: center;
   flex-wrap: wrap;
+  
 }
 
 .logo-img img{

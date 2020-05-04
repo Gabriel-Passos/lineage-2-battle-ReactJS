@@ -46,9 +46,9 @@ export default function Home(){
           </div>
           <div className="menu">
               <li><Link to="/"><FiInstagram size={20} color="#fff" className="optn-menu-icon-rigth"/></Link></li>
-              <li><Link to="/"><FiFacebook size={20} color="#fff"/></Link></li>
-              <li><Link to="/"><FiGithub size={20} color="#fff"/></Link></li>
-              <li><Link to="/"><FiLink size={20} color="#fff"/></Link></li>
+              <li><Link to="/"><FiFacebook size={20} color="#fff" className="optn-menu-icon-rigth"/></Link></li>
+              <li><Link to="/"><FiGithub size={20} color="#fff" className="optn-menu-icon-rigth"/></Link></li>
+              <li><Link to="/"><FiLink size={20} color="#fff" className="optn-menu-icon-rigth"/></Link></li>
           </div>
           <div className="imgbottom">
             <img src={ImgDivMenu} alt=""/>
