@@ -1,8 +1,12 @@
 .container-inventario{
   display: flex;
+  flex-direction: column;
 
-  margin-left: 15vw;
+  margin-left: 13vw;
 
+  height: 100vh;
+
+  background-color: #333333;
 }
 
 .container-inventario .header-inventario{
@@ -11,7 +15,7 @@
   justify-content: center;
   align-items: center;
   
-  width: 85vw;
+  width: 87vw;
   margin-top: 5vh;
 }
 
@@ -22,6 +26,8 @@
 .container-inventario .header-inventario form{
   display: flex;
   align-items: center;
+
+  margin-bottom: 8vh;
 }
 
 .container-inventario .header-inventario form input{
@@ -46,4 +52,31 @@
 
 .container-inventario .header-inventario form button:hover{
   opacity: .5;
+}
+
+.container-inventario .content-inventario{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+
+  width: 85vw;
+}
+
+.container-inventario .content-inventario .dados-inventario{
+  display: flex;
+  align-items: center;
+  padding: 8px;
+  margin: 5px;
+  
+  background-color: #cccccc;
+}
+
+.container-inventario .content-inventario .dados-inventario li{
+  width: 20vw;
+}
+
+.container-inventario .content-inventario .dados-inventario li span{
+  font-weight: 700;
 }

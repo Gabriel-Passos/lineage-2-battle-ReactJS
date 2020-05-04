@@ -54,7 +54,7 @@ export default function Profile() {
               <Link to="/profile" id="btnHistCompra" >Histórico de compra</Link>
               <Link to="/profile" id="btnShop" >Produtos</Link>
               <footer className="footer-profile">
-                <h2>Sessão termina: 20:36</h2>
+                <h2>Sessão expira em: 20:36</h2>
               </footer>
             </div>
           </aside>
