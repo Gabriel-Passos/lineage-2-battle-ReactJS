@@ -12,7 +12,10 @@ export default function Personagens() {
 
   const getUsers = async () => {
     const response = await api.get('/painelUsuarioCharacters.php');
-    setChars(response.data);
+    localStorage.setItem("teste", JSON.stringify(response.data));
+    const dadosCharacters = JSON.parse(localStorage.getItem('teste'));
+  
+    setChars(dadosCharacters);
   }
 
   useEffect(() => {

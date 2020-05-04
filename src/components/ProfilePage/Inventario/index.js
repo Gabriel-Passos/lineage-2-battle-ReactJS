@@ -1,4 +1,5 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 
 import './style.css'
 
@@ -40,7 +41,10 @@ export default function Inventario() {
         </div>
         {dadosChar.map((dadosChar, index) => (
           <div className="content-inventario" key={index}>
-            <li>Nome do personagem: {dadosChar.char_name}</li>
+            <div className="dados-inventario">
+              <li>Nome do personagem: <span>{dadosChar.char_name}</span></li>
+              <Link to="">Ver inventário</Link>
+            </div>
           </div>
         ))}
       </section>
