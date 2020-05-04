@@ -24,10 +24,10 @@ export default function Profile() {
       <>
         <section className="container-profile"> 
           <aside className="container-aside-profile">
-            <header className="container-header-profile">
+            <div className="container-header-profile">
               <h1>Painel do usuário</h1>
               <button onClick={handleLogout}><FiPower size={16} color="#000000"/></button>
-            </header>
+            </div>
             <div className="aside-top">
               <h1>Bem Vindo(a)</h1>
               <img src={ImgTest} alt=""/>
@@ -53,9 +53,9 @@ export default function Profile() {
               <h2>Shop</h2>
               <Link to="/profile" id="btnHistCompra" >Histórico de compra</Link>
               <Link to="/profile" id="btnShop" >Produtos</Link>
-              <footer className="footer-profile">
+              <div className="footer-profile">
                 <h2>Sessão expira em: 20:36</h2>
-              </footer>
+              </div>
             </div>
           </aside>
           <section className="container-section-profile">
