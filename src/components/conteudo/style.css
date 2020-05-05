@@ -93,7 +93,8 @@
 }
 
 .img-raca:hover{
-    background-color: rgb(53, 53, 53);
+
+    background-image: url('../../assets/images/grafico.png');
 	border-radius: 5px;
     transition: background 2s;
 }
@@ -111,3 +112,15 @@
     width: 1px;
     
   }
+
+  .grafico-raca{
+      width: 50%;
+      height: 350px;
+      padding: 0;
+      margin: 0 auto;
+      background-image: url('../../assets/images/grafico.png');
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: 100% 100%;
+  }
+

@@ -109,20 +109,20 @@ export default function Conteudo(){
                                 No escuro e no frio ficamos escutando músicas e, enquanto isso, o fogo queimava o chão. Aos risos o vimos começar a consumir os avisos e os papéis afixados nas paredes daquela sala, e então ficamos presos entre as chamas e a porta. Não tínhamos como sair.
                              </div>
                         </div>
-                        <div className="content-card">
-                            <div className="img-raca orc img-card-size"></div>
-                             <div className="racao-texto">
-                             Acendemos uma fogueira numa sala abandonada do colégio. Por estar onde estávamos e por sermos quem somos sabíamos que nunca iriam nos achar.
-                                No escuro e no frio ficamos escutando músicas e, enquanto isso, o fogo queimava o chão. Aos risos o vimos começar a consumir os avisos e os papéis afixados nas paredes daquela sala, e então ficamos presos entre as chamas e a porta. Não tínhamos como sair.
-                             </div>
-                        </div>
-                        <div className="content-card">
-                            <div className="img-raca anao img-card-size"></div>
-                             <div className="racao-texto">
-                             Acendemos uma fogueira numa sala abandonada do colégio. Por estar onde estávamos e por sermos quem somos sabíamos que nunca iriam nos achar.
-                                No escuro e no frio ficamos escutando músicas e, enquanto isso, o fogo queimava o chão. Aos risos o vimos começar a consumir os avisos e os papéis afixados nas paredes daquela sala, e então ficamos presos entre as chamas e a porta. Não tínhamos como sair.
-                             </div>
-                        </div>
+                            <div className="content-card">
+                                <div className="img-raca orc img-card-size"></div>
+                                <div className="racao-texto">
+                                Acendemos uma fogueira numa sala abandonada do colégio. Por estar onde estávamos e por sermos quem somos sabíamos que nunca iriam nos achar.
+                                    No escuro e no frio ficamos escutando músicas e, enquanto isso, o fogo queimava o chão. Aos risos o vimos começar a consumir os avisos e os papéis afixados nas paredes daquela sala, e então ficamos presos entre as chamas e a porta. Não tínhamos como sair.
+                                </div>
+                            </div>
+                            <div className="content-card">
+                                <div className="img-raca anao img-card-size"></div>
+                                <div className="racao-texto">
+                                Acendemos uma fogueira numa sala abandonada do colégio. Por estar onde estávamos e por sermos quem somos sabíamos que nunca iriam nos achar.
+                                    No escuro e no frio ficamos escutando músicas e, enquanto isso, o fogo queimava o chão. Aos risos o vimos começar a consumir os avisos e os papéis afixados nas paredes daquela sala, e então ficamos presos entre as chamas e a porta. Não tínhamos como sair.
+                                </div>
+                            </div>
                     </div>
             </div>
         </div>
