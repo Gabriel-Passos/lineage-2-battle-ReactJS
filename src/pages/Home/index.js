@@ -1,7 +1,8 @@
-import React from 'react';
+import React, {useState, useEffect} from 'react';
 import { Link } from 'react-router-dom';
 import {FiHexagon, FiInstagram, FiFacebook, FiGithub, FiLink} from 'react-icons/fi'
 
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 import Header from '../../components/Header/Header';
 import Conteudo from '../../components/conteudo/'
@@ -12,7 +13,42 @@ import ImgDivMenu from '../../assets/images/imgDivMenu.png';
 import logo from '../../assets/images/l2-logo.png';
 import interludeLogo from '../../assets/images/interlude-logo.png';
 
+import {Button, Modal} from 'react-bootstrap';
+import api from '../../services/api';
+
 export default function Home(){
+
+  const [modal, setModal] = useState([]);
+
+  async function getItens(){
+    const response = await api.get("charactersitens.php");
+
+    let i=0;
+
+    let max = Object.keys(response.data).length;
+
+    while(i < max ){
+      console.log(i);
+      console.log(response.data[i].item_id);
+      console.log("----------------------------------------------");
+
+      if(response.data[i].item_id == null){
+        console.log(response.data[i].item_id);
+        response.data[i].item_id = "blank";
+      }
+      i++;
+    }
+
+    setModal(response.data);
+  }
+  useEffect(()=>{
+    getItens();
+  }, [])
+
+  const [show, setShow] = useState(false);
+
+  const handleClose = () => setShow(false);
+  const handleShow = () => setShow(true);
    return (
     <>
       <Header />
@@ -56,6 +92,26 @@ export default function Home(){
         </div>
       </div>
       <Conteudo />
+      <Button variant="primary" onClick={handleShow} >
+        Launch demo modal
+      </Button>
+
+      <Modal show={show} onHide={handleClose} className="modal">
+        <Modal.Header closeButton>
+          <Modal.Title>Itens</Modal.Title>
+        </Modal.Header>
+          <Modal.Body>{modal.map((dados, index)=>(
+              <div key={index}><img className="imgitens" src={require(`../../assets/items_icon/${dados.item_id}.gif`)}/>{dados.item_id}</div>
+          ))}</Modal.Body>
+        <Modal.Footer>
+          <Button variant="secondary" onClick={handleClose}>
+            Close
+          </Button>
+          <Button variant="primary" onClick={handleClose}>
+            Save Changes
+          </Button>
+        </Modal.Footer>
+      </Modal>
     </>
   );
 }
