@@ -80,3 +80,58 @@
 .container-inventario .content-inventario .dados-inventario li span{
   font-weight: 700;
 }
+
+
+.imgitens{
+  width: 3vw;
+  max-width: 100%;
+  height: 0 auto;
+  padding: 5px;
+  border: 1px silver dashed;
+  min-width: 50px;
+  min-width: 0 auto;
+}
+
+.div_modal{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.itens_info{
+  visibility: hidden;
+  width: 15vw;
+  min-width: 150px;
+  height: 0 auto;
+  color: black;
+  position: absolute;
+  border: black 1px solid;
+  border-radius: 20px;
+  background-color: white;
+
+  text-align: center;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+
+  box-shadow:  6px 0 5px 3px #000000;
+ 
+
+}
+
+.itens_info h3{
+  font-size: 2vh;
+}
+
+.hover_itens:hover .itens_info{
+  visibility: visible !important;
+
+
+}
+
+
+
+.modal_tittle{
+  text-align: center;
+  color: black;
+  font-family: Robot;
+}
