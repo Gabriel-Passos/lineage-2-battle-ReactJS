@@ -4,14 +4,13 @@ header{
   flex-wrap: wrap;
   width: 100%;
   background: hsla(0,0%,96.9%,.15);
-  position: fixed;
 }
 
 .container-header{
   display: flex;
   align-items: center;
   flex-wrap: wrap;
-  
+
 }
 
 .logo-img img{
@@ -31,7 +30,7 @@ header{
 .header-button{
   background-color: transparent;
   padding: 5px 0;
-  margin-right: 10px;    
+  margin-right: 10px;
 }
 
 .header-button a{
