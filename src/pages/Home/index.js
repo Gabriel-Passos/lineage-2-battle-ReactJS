@@ -33,6 +33,7 @@ export default function Home(){
             <li><Link to="/"><FiHexagon size={10} color="#fff" className="optn-menu-icon"/> Doação</Link></li>
             <li><Link to="/"><FiHexagon size={10} color="#fff" className="optn-menu-icon"/> História</Link></li>
             <li><Link to="/"><FiHexagon size={10} color="#fff" className="optn-menu-icon"/> Classes</Link></li>
+            <li><Link to="/mapa"><FiHexagon size={10} color="#fff" className="optn-menu-icon"/> mapa</Link></li>
           </div>
           <div className="imgbottom">
             <img src={ImgDivMenu} alt=""/> 
