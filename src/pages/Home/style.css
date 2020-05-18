@@ -1,5 +1,5 @@
 .container-home{
-  width: 100%;
+  max-width: 100%;
   background-color: black;
   min-height: 745px;
   background-size: 100vh 0 auto;
