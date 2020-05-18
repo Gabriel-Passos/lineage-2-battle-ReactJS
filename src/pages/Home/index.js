@@ -40,7 +40,7 @@ export default function Home(){
           <div className="interlude-logo">
             <img src={interludeLogo} alt=""/>
           </div>
-          <Link to="/" className="myButton">JOGAR</Link>
+          <Link to="/profile" className="myButton">JOGAR</Link>
         </div>
         <div className="container-menu-right">
           <div className="imgtop">
