@@ -1,32 +1,34 @@
 import styled from 'styled-components';
 import {shade} from 'polished';
 
-import ImgBackground from '../../assets/images/bg-profile.jpg';
-
 export const ConatinerProfile = styled.section`
-  /* background-image: url(${ImgBackground});
-  background-size: cover;
-  background-repeat: no-repeat; */
-
-  height: 100vh;
-
-  overflow: scroll;
-  overflow-x: hidden;
-
-  section{
-    max-width: 860px;
-    margin: 0 auto;
-    padding: 20px;
-    margin-bottom: 30px;
-  }
+  max-width: 860px;
+  height: auto;
+  margin: 0 auto;
+  padding: 20px;
+  margin-bottom: 30px;
 `;
 
-export const Header = styled.div`
+export const ProfileHeader = styled.div`
   div{
+    margin-top: 80px;
     display: flex;
     justify-content: space-between;
 
+    img{
+      max-width: 100px;
+      height: 100px;
+      border-radius: 50%;
+    }
+
+    button{
+      cursor: pointer;
+      border: 0;
+      border-radius: 50%;
+    }
+
     h1{
+      margin: 0 8px;
       max-width: 482px;
       height: 84px;
 
@@ -35,8 +37,12 @@ export const Header = styled.div`
       font-weight: bold;
     }
 
-    button{
+    a{
+      display: block;
       height: 40px;
+
+      display: flex;
+      align-items: center;
 
       border: 0;
       border-radius: 5px;
@@ -44,40 +50,15 @@ export const Header = styled.div`
 
       font-family: Roboto, sans-serif;
       font-size: 18px;
-      text-align: center;
       color: #fff;
+
+      text-decoration: none;
 
       background-color: #0779e4;
 
       &:hover{
         background-color: ${shade(0.2, '#0779e4')};
       }
-    }
-  }
-`;
-
-export const PictureProfile = styled.div`
-  img{
-    margin-top: 50px;
-    max-width: 150px;
-    height: 150px;
-    border-radius: 50%;
-  }
-
-  a{
-    display: block;
-    margin-top: 5px;
-    margin-bottom: 40px;
-    padding: 15px;
-
-    font-family: Roboto, sans-serif;
-    font-size: 18px;
-    color: #0779e4;
-
-    text-decoration: none;
-
-    &:hover{
-      color: ${shade(0.2, '#0779e4')};
     }
   }
 `;
@@ -122,9 +103,11 @@ export const ItensMenu = styled.div`
     border-radius: 5px;
 
     text-decoration: none;
+    transition: transform 0.2s;
 
     &:hover{
       background-color: ${shade(0.2, '#0779e4')};
+      transform: translateX(5px);
     }
   }
 `;
