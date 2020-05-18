@@ -3,15 +3,14 @@ header{
   align-items: center;
   flex-wrap: wrap;
   width: 100%;
-  background: hsla(0,0%,96.9%,.15);
-  position: fixed;
+  background: rgb(29, 29, 29);
 }
 
 .container-header{
   display: flex;
   align-items: center;
   flex-wrap: wrap;
-  
+
 }
 
 .logo-img img{
@@ -31,7 +30,7 @@ header{
 .header-button{
   background-color: transparent;
   padding: 5px 0;
-  margin-right: 10px;    
+  margin-right: 10px;
 }
 
 .header-button a{
@@ -39,7 +38,7 @@ header{
   /* font-weight: bold; */
   padding: 5px 10px;
   color: white;
-
+  text-decoration: none;
 }
 
 .header-button a:hover{

@@ -14,7 +14,6 @@ export default function Routes() {
                 <Route path="/login" exact component={Login} />
                 <Route path="/register" exact component={Register} />
                 <Route path="/profile" component={Profile} />
-                <Route path="/profile" component={mapa} />
             </Switch>
         </BrowserRouter>
     );
