@@ -3,13 +3,15 @@ import React, {useState, useEffect} from 'react';
 import {ContainerPersonagens, PersonagensHeader, Personagens, PersonagensItemHeader} from './style'
 
 import api from '../../services/api';
+import {conversor} from '../../services/ChangeForName';
 
 const Pesonagem = () => {
   const [characters, setCharacters] = useState([]);
 
   const getCharacters = async () => {
     const response = await api.get('/painelUsuarioCharacters.php');
-    setCharacters(response.data);
+    
+    setCharacters(conversor(response.data));
   }
 
   useEffect(()=>{
@@ -59,7 +61,7 @@ const Pesonagem = () => {
               </div>
               <div>
                 <strong>Status</strong>
-                <p>{char.online}</p>
+                <img className="img-online" src={require(`../../assets/images/${char.online}`)}/>
               </div>
             </section>
           </Personagens>

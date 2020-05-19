@@ -73,6 +73,13 @@ export const Personagens = styled.section`
       text-align: center;
     }
   }
+
+  .img-online{
+    width:25%;
+    height:25%;
+    margin: 0;
+    margin-left:30%;
+  }
 `;
 
 export const PersonagensItemHeader = styled.div`
@@ -80,3 +87,4 @@ export const PersonagensItemHeader = styled.div`
   justify-content: space-between;
   align-items: center;
 `;
+
