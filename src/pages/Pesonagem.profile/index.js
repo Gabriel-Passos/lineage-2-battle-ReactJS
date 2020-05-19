@@ -27,8 +27,8 @@ const Pesonagem = () => {
           </div>
         </PersonagensHeader>
 
-        {characters.map(char => (
-          <Personagens>
+        {characters.map((char, index) => (
+          <Personagens key={index}>
             <PersonagensItemHeader>
               <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQKxG9cO8Rm6qkgOTuJzv4lK8WMNgXECb5PImMFbE3WwdUPAWPW&usqp=CAU" alt=""/>
               <h1>{char.char_name}</h1>
