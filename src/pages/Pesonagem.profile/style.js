@@ -39,9 +39,9 @@ export const PersonagensHeader = styled.div`
 export const Personagens = styled.section`
   max-width: 860px;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-wrap: wrap;
+  justify-content: center;
+
+  flex-direction: column;
   margin-top: 80px;
   padding: 12px;
   border-radius: 5px;
@@ -50,47 +50,33 @@ export const Personagens = styled.section`
   font-family: Roboto, sans-serif;
   color: #3f3f44;
 
+  & + section{
+    margin-top: 30px;
+  }
+
   h1{
     font-size: 30px;
-  }
-
-  div{
-    max-width: 860px;
-    padding: 4px;
-  }
-
-  button{
-    width: 60px;
-    height: 40px;
-
-    border: 0;
-  }
-
-  hr{
-    margin-left: 60px;
   }
 
   img{
     margin-right: 12px;
     max-width: 80px;
     height: 80px;
+    border-radius: 5px;
+  }
+
+  section{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    p{
+      text-align: center;
+    }
   }
 `;
 
-export const PersonagensItem = styled.section`
+export const PersonagensItemHeader = styled.div`
   display: flex;
-  flex-wrap: wrap;
-
-  font-family: Roboto, sans-serif;
-  margin: 0 auto;
-
-  strong{
-    margin-left: 60px;
-    font-size: 18px;
-  }
-
-  p{
-    margin-left: 60px;
-    text-align: center;
-  }
+  justify-content: space-between;
+  align-items: center;
 `;

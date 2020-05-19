@@ -1588,53 +1588,12 @@
   resolved "https://registry.yarnpkg.com/@popperjs/core/-/core-2.4.0.tgz#0e1bdf8d021e7ea58affade33d9d607e11365915"
   integrity sha512-NMrDy6EWh9TPdSRiHmHH2ye1v5U0gBD7pRYwSwJvomx7Bm4GG04vu63dYiVzebLOx2obPpJugew06xVP0Nk7hA==
 
-"@progress/kendo-popup-common@^1.2.2":
-  version "1.7.0"
-  resolved "https://registry.yarnpkg.com/@progress/kendo-popup-common/-/kendo-popup-common-1.7.0.tgz#d0d29dbc5eacdaba8803aa3d0f69f8a8ad05dbff"
-  integrity sha512-KxPIXDkirDpJaF/UWFKbe8QpbO5CwdQH/HyNT5Fj1qZb25YaO68VZCisls2qkcEVPHBlXesDcN3QJlt4vJ6tJw==
-
-"@progress/kendo-react-animation@3.12.0":
-  version "3.12.0"
-  resolved "https://registry.yarnpkg.com/@progress/kendo-react-animation/-/kendo-react-animation-3.12.0.tgz#3799cd4d39fdce209c44eaabaa6f8516a190266c"
-  integrity sha512-FASwdGZ5npXFKDtUmxAtrbTHD2AwPJeD3DnnQmCf8wPTQHSdOR4g+jnJ+ZB+/BFA/KLYISnpLzm45MOlu4caMQ==
-  dependencies:
-    "@progress/kendo-react-common" "3.12.0"
-    prop-types "^15.6.0"
-    react-transition-group "^2.2.0"
-
-"@progress/kendo-react-common@3.12.0":
-  version "3.12.0"
-  resolved "https://registry.yarnpkg.com/@progress/kendo-react-common/-/kendo-react-common-3.12.0.tgz#4c23ef88712c69d38b7957c074afa7ea3b08ba78"
-  integrity sha512-TgJVu4mgdrhulK6s7NeprtOrggdyeIAtvwOUaDziE8uHpkTr0fHxIHsJiooI5XD3QLWOJdxOGkscHRx+WiZfyw==
-  dependencies:
-    "@telerik/kendo-draggable" "2.0.0"
-    prop-types "^15.6.0"
-
-"@progress/kendo-react-dropdowns@^3.12.0":
-  version "3.12.0"
-  resolved "https://registry.yarnpkg.com/@progress/kendo-react-dropdowns/-/kendo-react-dropdowns-3.12.0.tgz#d96a54b87f814ca3955b2a143c3f0b984bb1b531"
-  integrity sha512-PcGFulfielrrsva0kSneiaSXh0PWkItlLFekIF2Q/NnQW2ak/Sbl6wBSBS5M2viGF57JGPqJYQLfQ2PLRYgoSg==
-  dependencies:
-    "@progress/kendo-react-common" "3.12.0"
-    "@progress/kendo-react-popup" "3.12.0"
-    prop-types "^15.6.0"
-
 "@progress/kendo-react-intl@^3.12.0":
   version "3.12.0"
   resolved "https://registry.yarnpkg.com/@progress/kendo-react-intl/-/kendo-react-intl-3.12.0.tgz#8a0bd5cd17afd8e753b4c45e7740db14d4f55761"
   integrity sha512-qnPLR6a6pCAptjTA11QZS5adu6REHDnwsSFaQXSWVeGkh2X8M4cp9AmVv9xblHPGhkmO8kkAJAhklVdEatnwww==
   dependencies:
     "@telerik/kendo-intl" "^2.1.0"
-    prop-types "^15.6.0"
-
-"@progress/kendo-react-popup@3.12.0":
-  version "3.12.0"
-  resolved "https://registry.yarnpkg.com/@progress/kendo-react-popup/-/kendo-react-popup-3.12.0.tgz#cef899539141f8938dd00010def07b52024f4145"
-  integrity sha512-XmSMBttW9CVAo+qmSjfdjw+E3afVe4RseZZqmwoz87eK4Js8g9UTxCmJNePxnvWQjLA14ddTNTxlzsI1gfyOgQ==
-  dependencies:
-    "@progress/kendo-popup-common" "^1.2.2"
-    "@progress/kendo-react-animation" "3.12.0"
-    "@progress/kendo-react-common" "3.12.0"
     prop-types "^15.6.0"
 
 "@restart/context@^2.1.4":
@@ -1757,11 +1716,6 @@
     "@svgr/plugin-jsx" "^4.3.3"
     "@svgr/plugin-svgo" "^4.3.1"
     loader-utils "^1.2.3"
-
-"@telerik/kendo-draggable@2.0.0":
-  version "2.0.0"
-  resolved "https://registry.yarnpkg.com/@telerik/kendo-draggable/-/kendo-draggable-2.0.0.tgz#95ca6fdc56022d80ab5d0fec98463e2bdf4fc3ec"
-  integrity sha512-6fZcwVZQNh9ovWbueo2VFgpFxktWdxaABe/gVZ+dJy4h+ngkoSr0HSmfUJY5QupMQ1RvLA9hr3Eficbqx+gU0Q==
 
 "@telerik/kendo-intl@^2.1.0":
   version "2.1.1"
@@ -9296,7 +9250,7 @@ react-scripts@3.4.0:
   optionalDependencies:
     fsevents "2.1.2"
 
-react-transition-group@^2.2.0, react-transition-group@^2.3.1:
+react-transition-group@^2.3.1:
   version "2.9.0"
   resolved "https://registry.yarnpkg.com/react-transition-group/-/react-transition-group-2.9.0.tgz#df9cdb025796211151a436c69a8f3b97b5b07c8d"
   integrity sha512-+HzNTCHpeQyl4MJ/bdE0u6XRMe9+XG/+aL4mCxVN4DnPBQ0/5bfHWPDuOZUzYdMj94daZaZdCCc1Dzt9R/xSSg==

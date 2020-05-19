@@ -15,6 +15,8 @@ export const ProfileHeader = styled.div`
     display: flex;
     justify-content: space-between;
 
+    color: #3f3f44;
+
     img{
       max-width: 100px;
       height: 100px;
@@ -54,10 +56,10 @@ export const ProfileHeader = styled.div`
 
       text-decoration: none;
 
-      background-color: #0779e4;
+      background-color: #3c9d9b;
 
       &:hover{
-        background-color: ${shade(0.2, '#0779e4')};
+        background-color: ${shade(0.2, '#3c9d9b')};
       }
     }
   }
@@ -65,6 +67,8 @@ export const ProfileHeader = styled.div`
 
 export const Menu = styled.section`
   margin-top: 80px;
+
+  color: #3f3f44;
 
   h2{
     font-family: Roboto, sans-serif;
@@ -94,7 +98,7 @@ export const ItensMenu = styled.div`
     max-width: 860px;
     padding: 12px;
 
-    background-color: #0779e4;
+    background-color: #3c9d9b;
 
     color: #fff;
     font-family: Roboto, sans-serif;
@@ -106,7 +110,7 @@ export const ItensMenu = styled.div`
     transition: transform 0.2s;
 
     &:hover{
-      background-color: ${shade(0.2, '#0779e4')};
+      background-color: ${shade(0.2, '#3c9d9b')};
       transform: translateX(5px);
     }
   }
