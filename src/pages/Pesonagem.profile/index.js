@@ -8,7 +8,7 @@ const Pesonagem = () => {
   const [characters, setCharacters] = useState([]);
 
   const getCharacters = async () => {
-    const response = await api.get('/charactersname.php');
+    const response = await api.get('/painelUsuarioCharacters.php');
     setCharacters(response.data);
   }
 
