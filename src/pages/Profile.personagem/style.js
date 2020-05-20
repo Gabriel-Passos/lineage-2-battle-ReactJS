@@ -1,28 +1,36 @@
 import styled from 'styled-components';
+import { shade } from 'polished';
 
 export const ContainerPersonagens = styled.section`
   max-width: 860px;
   height: auto;
   margin: 0 auto;
-  padding: 20px;
+  padding: 30px 20px;
 `;
 
 export const PersonagensHeader = styled.div`
+  div{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 
+    h1{
+      max-width: 482px;
+      height: 84px;
 
-  h1{
-    margin-top: 80px;
-    max-width: 482px;
-    height: 84px;
+      font-family: Roboto, sans-serif;
+      font-size: 36px;
+      font-weight: bold;
+      color: #3f3f44;
+    }
 
-    font-family: Roboto, sans-serif;
-    font-size: 36px;
-    font-weight: bold;
-    color: #3f3f44;
+    a{
+      text-decoration: none;
+    }
   }
 
-  div{
-    margin-top: 40px;
+  nav{
+    margin-top: 50px;
     font-family: Roboto, sans-serif;
     color: #3f3f44;
 
@@ -86,5 +94,20 @@ export const PersonagensItemHeader = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
+
+  button{
+    border: 0;
+    border-radius: 5px;
+    padding: 8px;
+    color: #fff;
+    font-weight: bold;
+    background-color: #e84545;
+    box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.2);
+
+    &:hover{
+      background-color: ${shade(0.1, '#e84545')};
+      box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.4);
+    }
+  }
 `;
 

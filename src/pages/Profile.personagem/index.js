@@ -1,4 +1,6 @@
 import React, {useState, useEffect} from 'react';
+import {Link} from 'react-router-dom';
+import {FiChevronLeft} from 'react-icons/fi';
 
 import {ContainerPersonagens, PersonagensHeader, Personagens, PersonagensItemHeader} from './style'
 
@@ -9,24 +11,39 @@ const Pesonagem = () => {
   const [characters, setCharacters] = useState([]);
 
   const getCharacters = async () => {
-    const response = await api.get('/painelUsuarioCharacters.php');
-    
-    setCharacters(conversor(response.data));
+    const response = await api.get('/mockPerson.php');
+    try{
+      setCharacters(conversor(response.data));
+    } catch (err){
+      alert(`Erro: ${err}`);
+    }
+  }
+
+  const getNumbersChars = () => {
+    const lengthCharacters = characters;
+    return lengthCharacters.length;
   }
 
   useEffect(()=>{
     getCharacters();
   }, []);
 
+
   return (
     <>
       <ContainerPersonagens>
         <PersonagensHeader>
-          <h1>Aqui está a lista de todos os seus personagens</h1>
           <div>
-            <strong>0</strong>
-            <p>Personagens</p>
+            <h1>Aqui está a lista de todos os seus personagens</h1>
+            <Link to="/profile">
+              <FiChevronLeft size={20}/>
+              Voltar
+            </Link>
           </div>
+          <nav>
+            <strong>{getNumbersChars()}</strong>
+            <p>Personagens</p>
+          </nav>
         </PersonagensHeader>
 
         {characters.map((char, index) => (
@@ -34,7 +51,7 @@ const Pesonagem = () => {
             <PersonagensItemHeader>
               <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQKxG9cO8Rm6qkgOTuJzv4lK8WMNgXECb5PImMFbE3WwdUPAWPW&usqp=CAU" alt=""/>
               <h1>{char.char_name}</h1>
-              <div />
+              <button>Destravar char</button>
             </PersonagensItemHeader>
 
             <hr/>

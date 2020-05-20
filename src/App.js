@@ -1,12 +1,15 @@
 import React from 'react';
+import {BrowserRouter} from 'react-router-dom';
 
 import './global.css';
 
-import Routes from './routes';
+import Routes from './routes/index';
 
-function App() {
+const App = () => {
   return (
-    <Routes />
+    <BrowserRouter>
+      <Routes />
+    </BrowserRouter>
   );
 }
 
