@@ -5,7 +5,7 @@ export const ConatinerProfile = styled.section`
   max-width: 860px;
   height: auto;
   margin: 0 auto;
-  padding: 20px;
+  padding: 30px 20px;
   margin-bottom: 30px;
 `;
 
@@ -56,10 +56,12 @@ export const ProfileHeader = styled.div`
 
       text-decoration: none;
 
-      background-color: #3c9d9b;
+      background-color: #e84545;
+      box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.2);
 
       &:hover{
-        background-color: ${shade(0.2, '#3c9d9b')};
+        background-color: ${shade(0.1, '#e84545')};
+        box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.4);
       }
     }
   }
@@ -98,7 +100,8 @@ export const ItensMenu = styled.div`
     max-width: 860px;
     padding: 12px;
 
-    background-color: #3c9d9b;
+    background-color: #e84545;
+    box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.2);
 
     color: #fff;
     font-family: Roboto, sans-serif;
@@ -110,7 +113,8 @@ export const ItensMenu = styled.div`
     transition: transform 0.2s;
 
     &:hover{
-      background-color: ${shade(0.2, '#3c9d9b')};
+      background-color: ${shade(0.1, '#e84545')};
+      box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.4);
       transform: translateX(5px);
     }
   }
