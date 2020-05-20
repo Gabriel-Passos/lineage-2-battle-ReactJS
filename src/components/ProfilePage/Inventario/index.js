@@ -82,17 +82,21 @@ export default function Inventario() {
 
 
       <Modal show={show} onHide={handleClose} className="modal">
-        <Modal.Header closeButton>
-          <Modal.Title className="modal_tittle">Itens</Modal.Title>
-        </Modal.Header>
-          <Modal.Body className="div_modal">{modal.map((dados, index)=>(
-              <div key={index} className="hover_itens">
-                <img className="imgitens" src={require(`../../../assets/items_icon/${dados.item_id}.gif`)}/>
-                <div className="itens_info"><h3>{dados.item_name}</h3> <h3>enchant:{dados.enchant_level}</h3> <h3>Quantidade:{dados.amount}</h3></div>
-              </div>
-          ))}</Modal.Body>
-        <Modal.Footer>
-        </Modal.Footer>
+          
+          <Modal.Body className="div_modal">
+            <div className="img-top" closeButton></div>
+            <div className="img-body">
+              {modal.map((dados, index)=>(
+                <>
+                <div key={index} className="hover_itens">
+                  <img className="imgitens" src={require(`../../../assets/items_icon/${dados.item_id}.gif`)}/>
+                  <div className="itens_info"><h3>{dados.item_name}</h3> <h3>enchant:{dados.enchant_level}</h3> <h3>Quantidade:{dados.amount}</h3></div>
+                </div>
+                </>
+              ))}
+            </div>
+            <div className="img-footer"></div>
+          </Modal.Body>
       </Modal>
     </>
   );

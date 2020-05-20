@@ -42,7 +42,7 @@ const Profile = () => {
             <div>
               <strong>Recursos</strong>
               <div>
-                <Link to="/profile">Ver inventário</Link>
+                <Link to="/profile/itens">Ver inventário</Link>
                 <Link to="/profile">Leilão</Link>
                 <Link to="/profile">Boss live</Link>
                 <Link to="/profile">Mapa live</Link>
