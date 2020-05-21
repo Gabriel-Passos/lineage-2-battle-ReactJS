@@ -2,8 +2,9 @@ header{
   display: flex;
   align-items: center;
   flex-wrap: wrap;
+  position: fixed;
   width: 100%;
-  background: rgb(29, 29, 29);
+  background: rgb(29, 29, 29, 0.3);
 }
 
 .container-header{
