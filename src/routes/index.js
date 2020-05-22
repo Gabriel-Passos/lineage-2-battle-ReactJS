@@ -7,6 +7,7 @@ import Register from '../pages/Register';
 import Login from '../pages/Login';
 import Personagem from '../pages/Profile.personagem';
 import Boss from '../pages/Profile.boss';
+import Inventario from '../pages/Profile.inventario';
 
 const Routes = () => {
   return (
@@ -17,6 +18,7 @@ const Routes = () => {
       <Route path="/profile" exact component={Profile} />
       <Route path="/profile/personagens" component={Personagem} />
       <Route path="/profile/boss" component={Boss} />
+      <Route path="/profile/inventario" component={Inventario} />
     </Switch>
   );
 }
