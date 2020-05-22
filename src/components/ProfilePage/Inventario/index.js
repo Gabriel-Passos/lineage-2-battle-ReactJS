@@ -1,5 +1,5 @@
 import React, {useState, useEffect} from 'react';
-import { Link } from 'react-router-dom';
+import {} from 'react-router-dom';
 
 import './style.css'
 
@@ -13,10 +13,10 @@ export default function Inventario() {
 
   const handleCharName = async e => {
     e.preventDefault();
-    
+
     try{
       const response = await api.post('/charactersname.php', {charName});
-      
+
       if(response.data === false){
         alert("Personagem não existe");
       } else {
@@ -25,7 +25,7 @@ export default function Inventario() {
     } catch(err){
       alert("Falha na pesquisa, tente novamente mais tarde.");
     }
-  }  
+  }
 
   const [modal, setModal] = useState([]);
   const [show, setShow] = useState(false);
@@ -59,7 +59,7 @@ export default function Inventario() {
         <div className="header-inventario">
           <h1>Informe o nome do jogador que queira ver o inventário</h1>
           <form onSubmit={handleCharName}>
-            <input 
+            <input
               type="text"
               placeholder="Nome do jogador"
               value={charName}
@@ -82,7 +82,7 @@ export default function Inventario() {
 
 
       <Modal show={show} onHide={handleClose} className="modal">
-          
+
           <Modal.Body className="div_modal">
             <div className="img-top" closeButton></div>
             <div className="img-body">
