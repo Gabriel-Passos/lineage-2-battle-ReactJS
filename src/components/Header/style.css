@@ -28,6 +28,10 @@ header{
   margin-right: 30px;
 }
 
+.header-button li{
+  list-style: none;
+}
+
 .header-button{
   background-color: transparent;
   padding: 5px 0;

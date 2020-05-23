@@ -7,13 +7,13 @@ import {ContainerInventario ,InventarioHeader, FormInventario, Personagens} from
 import api from '../../services/api';
 
 const Inventario = () => {
-  const [personagem, setPersonagem] = useState('');
+  const [charName, setcharName] = useState('');
   const [personagemList, setPersonagemList] = useState([]);
 
   const handlePesquisarInventario = async e => {
     e.preventDefault();
 
-    const response = await api.post('/charactersname.php', personagem);
+    const response = await api.post('/charactersname.php', {charName});
     try{
       if(response.data === false){
         alert("Personagem não existe");
@@ -40,8 +40,8 @@ const Inventario = () => {
           <input
             type="text"
             placeholder="Nome do personagem"
-            value={personagem}
-            onChange={e => setPersonagem(e.target.value)}
+            value={charName}
+            onChange={e => setcharName(e.target.value)}
           />
           <button type="submit"><FiSearch size={15}/></button>
         </FormInventario>

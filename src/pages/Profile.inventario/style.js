@@ -68,8 +68,13 @@ export const Personagens = styled.section`
   border-radius: 5px;
   background-color: #ccc;
 
+  & + section{
+    margin-top: 20px;
+  }
+
   h1{
     font-size: 30px;
+    flex: 1;
   }
 
   button{

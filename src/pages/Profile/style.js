@@ -1,14 +1,13 @@
 import styled from 'styled-components';
 import {shade} from 'polished';
+
 import Background from '../../assets/images/background-perfil.jpg';
 
 export const BODY = styled.body`
-
   background-image: url(${Background});
-  background-size:cover;
-  padding-top:1%;
-
-
+  background-size: cover;
+  padding-top: 1%;
+  padding-bottom: 1%;
 `;
 
 export const ConatinerProfile = styled.section`
@@ -18,8 +17,7 @@ export const ConatinerProfile = styled.section`
   padding: 30px 20px;
   background-color: rgba(0, 0, 0, 0.1);
   border-radius:2%;
-
-
+  z-index: 99;
 `;
 
 export const ProfileHeader = styled.div`
@@ -28,7 +26,7 @@ export const ProfileHeader = styled.div`
     display: flex;
     justify-content: space-between;
 
-    color: #3f3f44;
+    color: #fff;
 
     img{
       max-width: 100px;
@@ -83,7 +81,7 @@ export const ProfileHeader = styled.div`
 export const Menu = styled.section`
   margin-top: 80px;
 
-  color: #3f3f44;
+  color: #fff;
 
   background-image: url("../../assets/images/background-perfil.png");
   background-size:100%;
@@ -100,7 +98,7 @@ export const ItensMenu = styled.div`
 
   strong{
     width: 860px;
-    color: white;
+    color: #fff;
     font-family: Roboto, sans-serif;
     font-size: 30px;
     font-weight: 100;
