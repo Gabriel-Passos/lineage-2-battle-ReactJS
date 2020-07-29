@@ -12,7 +12,7 @@
   <a href="https://reactrouter.com/"><img src="https://img.shields.io/static/v1?label=react-router-dom&message=5.2.0&color=blue&style=for-the-badge"/><a/>
 </p>
   
-> Em desenvolvimento.
+> Status em Projeto: Em desenvolvimento. :warning:
 
 ### Tópicos 
 
