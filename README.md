@@ -29,9 +29,7 @@
 ## Descrição do projeto
 
 <p align="justify">
-  A aplicação tem como objetivo fornecer aos jogadores de Lineage 2 informações sobre o novo servidor, o usuário poderá ver informações da conta, os chefes vivos no mapa, o inventário,
-  seus personagens e até partivcipar de um leilão.
-  O projeto está sendo desenvolvido em conjunto com outro desenvolvedor que está utilizando PHP no back-end da aplicação.
+  A aplicação tem como objetivo fornecer aos jogadores de Lineage 2 informações sobre o novo servidor, os usuários poderão ver informações da conta, os chefes vivos no mapa, o inventário, seus personagens e até participar de um leilão. O projeto está sendo desenvolvido em conjunto com outro desenvolvedor que está utilizando PHP no back-end da aplicação.
 </p>
 
 
