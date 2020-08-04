@@ -3,13 +3,13 @@
 </h1>
 
 <p align="center">
-  <a href="https://reactjs.org/"><img src="https://img.shields.io/static/v1?label=react&message=16.13.1&color=blue&style=for-the-badge"/><a/>
-  <a href="https://react-bootstrap.github.io/"><img src="https://img.shields.io/static/v1?label=react-bootstrap&message=1.0.1&color=blue&style=for-the-badge"/><a/>
-  <a href="https://react-icons.github.io/react-icons/"><img src="https://img.shields.io/static/v1?label=react-icons&message=3.9.0&color=blue&style=for-the-badge"/><a/>
-  <a href="https://styled-components.com/"><img src="https://img.shields.io/static/v1?label=styled-components&message=5.1.0&color=blue&style=for-the-badge"/><a/>
-  <a href="https://polished.js.org/docs/"><img src="https://img.shields.io/static/v1?label=polished&message=3.6.3&color=blue&style=for-the-badge"/><a/>
-  <a href="https://github.com/axios/axios"><img src="https://img.shields.io/static/v1?label=axios&message=0.19.2&color=blue&style=for-the-badge"/><a/>
-  <a href="https://reactrouter.com/"><img src="https://img.shields.io/static/v1?label=react-router-dom&message=5.2.0&color=blue&style=for-the-badge"/><a/>
+  <a href="https://reactjs.org/"><img src="https://img.shields.io/static/v1?label=React&message=16.13.1&color=blue&style=flat"/><a/>
+  <a href="https://react-bootstrap.github.io/"><img src="https://img.shields.io/static/v1?label=React-Bootstrap&message=1.0.1&color=blue&style=flat"/><a/>
+  <a href="https://react-icons.github.io/react-icons/"><img src="https://img.shields.io/static/v1?label=React-Icons&message=3.9.0&color=blue&style=flat"/><a/>
+  <a href="https://styled-components.com/"><img src="https://img.shields.io/static/v1?label=Styled-Components&message=5.1.0&color=blue&style=flat"/><a/>
+  <a href="https://polished.js.org/docs/"><img src="https://img.shields.io/static/v1?label=Polished&message=3.6.3&color=blue&style=flat"/><a/>
+  <a href="https://github.com/axios/axios"><img src="https://img.shields.io/static/v1?label=Axios&message=0.19.2&color=blue&style=flat"/><a/>
+  <a href="https://reactrouter.com/"><img src="https://img.shields.io/static/v1?label=React-Router-DOM&message=5.2.0&color=blue&style=flat"/><a/>
 </p>
   
 > Status do Projeto: Em desenvolvimento. :warning:
